@@ -10,6 +10,7 @@
 - [Checklist](#checklist)
 
 ---
+---
 # Definición del producto
 
 ## Diseño de experiencia de usuario (User Experience Design)
