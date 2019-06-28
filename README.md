@@ -9,9 +9,6 @@
 - [Contenido de referencia](#contenido-de-referencia)
 - [Checklist](#checklist)
 
----
----
----
 # Definición del producto
 
 ## Diseño de experiencia de usuario (User Experience Design)
@@ -32,10 +29,10 @@
 
 
 - Historias de usuario
-    - PENDIENTE: Una vez que entiendas las necesidades de tu usuario, escribe las  que representen
+
+    - PENDIENTE: Una vez que entiendas las necesidades de tu usuario,escribe las  que representen
 todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
 de terminado (_definition of done_) para cada una.
-
 
 
 - Principios de diseño visual
@@ -43,7 +40,7 @@ de terminado (_definition of done_) para cada una.
     -  Fué importante que la interfaz a pesar de ser una versión mínima de nuestro ideal,
 siga los fundamentos de _visual design_.
 
----
+
 # Resumen del proyecto
 
 NOTA: DESARROLLAR LA TEMÁTICA Y POR QUÉ LA ELEGIMOS, BASADA EN LO ANTERIOR
@@ -54,13 +51,27 @@ ayude a interactuar y entender mejor esos datos.
 
 
 ## Ideación
--   Diseño de la Interfaz de Usuario
--    Prototipo de baja fidelidad
+1.  Diseño de la Interfaz de Usuario
+-    Prototipo de baja fidelidad:
+ 
+        **Prototipo 1.0**
+
+ <img src="src/img/sketch1.jpeg" width=300>
+ 
+ <img src="src/img/sketch2.jpeg" width=300>
+
 -   Prototipo de alta fidelidad
+
+    - [ejemplo ideal](https://dribbble.com/shots/6579658-Pokemon-Pokedex-Nation-Dex)
+
+![Ejemplo ideal](src/img/UIideal.png)
+
 -   Testeos de usabilidad
+
 -   Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
 ---
+
 # Consideraciones generales
 
 - Este proyecto se resolvió en dupla.
@@ -93,7 +104,6 @@ ayude a interactuar y entender mejor esos datos.
 
 ## Hacker edition
 PENDIENTE
-
 NOTA: CREAR UNA CARPETA Y LINKEAR ESTA INFORMACION.
 
 
