@@ -49,17 +49,29 @@ Una vez que definas tu área de interés, entiende quién es tu usuario y qué
 necesita saber o ver exactamente; luego podrás construir la interfaz que le
 ayude a interactuar y entender mejor esos datos.
 
+## UX Research
+
+Creamos un cuestionario con Forms de Google :
+
+[![cuestionario](src/img/imagen-encuesta.png)](https://docs.google.com/forms/d/e/1FAIpQLSeXwcFO60klb_23S_vqdE7kWCNjiNjNA3GPC6zY2FYBIpU5SA/viewform)  para recopilar información de los posibles usuarios a los que podría interesar una página web sobre Pokemón.
+
+Consideramos unicamente a la primera generación de pokemones durante la primera iteración del proyecto y el objetivo es averiguar caracterisiticas del usuario.
+
+Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rango de edad y el género. Esperando descubrir el impacto que tuvo está generación en su época.
+
+
 
 ## Ideación
+
 1.  Diseño de la Interfaz de Usuario
 -    Prototipo de baja fidelidad:
  
-        **Prototipo 1.0**
+  **Prototipo 1.0**
 
- <img src="src/img/sketch1.jpeg" width=300>
+![Sketch](src/img/sketch1.jpeg)
+
+![Sketch de la card](src/img/sketch2.jpeg)
  
- <img src="src/img/sketch2.jpeg" width=300>
-
 -   Prototipo de alta fidelidad
 
     - [ejemplo ideal](https://dribbble.com/shots/6579658-Pokemon-Pokedex-Nation-Dex)
