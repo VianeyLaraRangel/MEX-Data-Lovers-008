@@ -9,6 +9,9 @@
 - [Contenido de referencia](#contenido-de-referencia)
 - [Checklist](#checklist)
 
+---
+---
+---
 # Definición del producto
 
 ## Diseño de experiencia de usuario (User Experience Design)
@@ -29,10 +32,10 @@
 
 
 - Historias de usuario
-
-    - PENDIENTE: Una vez que entiendas las necesidades de tu usuario,escribe las  que representen
+    - PENDIENTE: Una vez que entiendas las necesidades de tu usuario, escribe las  que representen
 todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
 de terminado (_definition of done_) para cada una.
+
 
 
 - Principios de diseño visual
@@ -40,7 +43,7 @@ de terminado (_definition of done_) para cada una.
     -  Fué importante que la interfaz a pesar de ser una versión mínima de nuestro ideal,
 siga los fundamentos de _visual design_.
 
-
+---
 # Resumen del proyecto
 
 NOTA: DESARROLLAR LA TEMÁTICA Y POR QUÉ LA ELEGIMOS, BASADA EN LO ANTERIOR
@@ -49,42 +52,15 @@ Una vez que definas tu área de interés, entiende quién es tu usuario y qué
 necesita saber o ver exactamente; luego podrás construir la interfaz que le
 ayude a interactuar y entender mejor esos datos.
 
-## UX Research
-
-Creamos un cuestionario con Forms de Google :
-
-[![cuestionario](src/img/imagen-encuesta.png)](https://docs.google.com/forms/d/e/1FAIpQLSeXwcFO60klb_23S_vqdE7kWCNjiNjNA3GPC6zY2FYBIpU5SA/viewform)  para recopilar información de los posibles usuarios a los que podría interesar una página web sobre Pokemón.
-
-Consideramos unicamente a la primera generación de pokemones durante la primera iteración del proyecto y el objetivo es averiguar caracterisiticas del usuario.
-
-Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rango de edad y el género. Esperando descubrir el impacto que tuvo está generación en su época.
-
-
 
 ## Ideación
-
-1.  Diseño de la Interfaz de Usuario
--    Prototipo de baja fidelidad:
- 
-  **Prototipo 1.0**
-
-![Sketch](src/img/sketch1.jpeg)
-
-![Sketch de la card](src/img/sketch2.jpeg)
- 
+-   Diseño de la Interfaz de Usuario
+-    Prototipo de baja fidelidad
 -   Prototipo de alta fidelidad
-
-    - [ejemplo ideal](https://dribbble.com/shots/6579658-Pokemon-Pokedex-Nation-Dex)
-
-
-![Ejemplo ideal](src/img/UIideal.png)
-
 -   Testeos de usabilidad
-
 -   Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
 ---
-
 # Consideraciones generales
 
 - Este proyecto se resolvió en dupla.
@@ -117,6 +93,7 @@ Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rang
 
 ## Hacker edition
 PENDIENTE
+
 NOTA: CREAR UNA CARPETA Y LINKEAR ESTA INFORMACION.
 
 
