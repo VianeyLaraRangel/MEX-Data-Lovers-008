@@ -1,17 +1,20 @@
-.container {
+*{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    background-color: aqua;
-    width: 100%;
-
+    padding: 0
 }
-.header {
-    background-color: white;
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.row * {
+    border: 1px solid black;
+    margin: auto;
     width: 100%;
     height: auto;
-    border: solid black 2px;
 }
 
-.logo {
 
-}
