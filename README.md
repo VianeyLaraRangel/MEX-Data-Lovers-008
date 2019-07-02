@@ -76,6 +76,7 @@ Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rang
 
     - [ejemplo ideal](https://dribbble.com/shots/6579658-Pokemon-Pokedex-Nation-Dex)
 
+
 ![Ejemplo ideal](src/img/UIideal.png)
 
 -   Testeos de usabilidad
