@@ -1,20 +1,26 @@
+/*Haciendo reset de todos los elementos para poder calcular la grid*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+/*Definiendo caracteristicas del container que contendrá todo*/
 .container {
     width: 100%;
+    max-width: 1200px;
     margin: 0px auto;
-    display: flex;
+    /*display: flex;*/
+}
+/*Usando el hack clearfix en el row porque las cajas flotan una a lado de la otra */
+.row:before, .row:after{
+    content: " ";
+    display: table;
+    border: 1px solid black;
+}
+.row:after {
+    clear: both;
 }
 
-.row {
-    border: 1px solid black;
-    margin: 0;
-    height: auto;
-}
 
 [class*= "col-"]{
     border: 1px solid black;
@@ -27,53 +33,28 @@
         background-color: whitesmoke;
     }
     /*Estableciendo anchos de columna*/
-        
     .col-1{
-        width: 60px;
-        background-color: blue;
-    }
+        width: 8.333333333333332%;}
     .col-2{
-        width: 120px;
-        background-color: green;
-    }
+        width: 16.666666666666664%;}
     .col-3{
-        width: 180px;
-        background-color: blueviolet
-    }
+        width: 25%;}
     .col-4{
-        width: 240px;
-        background-color: brown;
-    }
+        width: 33.33333333333333%;}
     .col-5{
-        width: 300px;
-        background-color: aqua;
-    }
+        width: 41.66666666666667%;}
     .col-6{
-        width: 360px;
-        background-color: red;
-    }
+        width: 50%;}
     .col-7{
-        width: 420px;
-        background-color: greenyellow;
-    }
+        width: 58.333333333333336%;}
     .col-8{
-        width: 480px;
-        background-color: purple;
-    }
+        width: 66.66666666666666%;}
     .col-9{
-        width: 540px;
-        background-color: pink;
-    }
+        width: 75%;}
     .col-10{
-        width: 600px;
-        background-color: orange;
-    }
+        width: 83.33333333333334%;}
     .col-11{
-        width: 660px;
-        background-color: orangered;
-    }
+        width: 91.66666666666666%;}
     .col-12{
-        width: 729px;
-        background-color: orchid;
-    }
+        width: 100%;}
  }
