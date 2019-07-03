@@ -12,21 +12,14 @@
 
 .row {
     border: 1px solid black;
-    margin: auto;
+    margin: 0;
     height: auto;
 }
 
 [class*= "col-"]{
     border: 1px solid black;
+    display: flex;
 }
-/* .logo {
-    justify-content: flex-start;
-}
-
-.titulo {
-    justify-content: center;
-}  */
-
 
  /*Media queries para mobile 1280X720*/
  @media only screen and (max-width: 720px) {
@@ -35,16 +28,52 @@
     }
     /*Estableciendo anchos de columna*/
         
-    .col-1{width: 8.333333333333332%;}
-    .col-2{width: 16.666666666666664%;}
-    .col-3{width: 25%;}
-    .col-4{width: 33.33333333333333%;}
-    .col-5{width: 41.66666666666667%;}
-    .col-6{width: 50%;}
-    .col-7{width: 58.333333333333336%;}
-    .col-8{width: 66.66666666666666%;}
-    .col-9{width: 75%;}
-    .col-10{width: 83.33333333333334%;}
-    .col-11{width: 91.66666666666666%;}
-    .col-12{width: 100%;}
+    .col-1{
+        width: 60px;
+        background-color: blue;
+    }
+    .col-2{
+        width: 120px;
+        background-color: green;
+    }
+    .col-3{
+        width: 180px;
+        background-color: blueviolet
+    }
+    .col-4{
+        width: 240px;
+        background-color: brown;
+    }
+    .col-5{
+        width: 300px;
+        background-color: aqua;
+    }
+    .col-6{
+        width: 360px;
+        background-color: red;
+    }
+    .col-7{
+        width: 420px;
+        background-color: greenyellow;
+    }
+    .col-8{
+        width: 480px;
+        background-color: purple;
+    }
+    .col-9{
+        width: 540px;
+        background-color: pink;
+    }
+    .col-10{
+        width: 600px;
+        background-color: orange;
+    }
+    .col-11{
+        width: 660px;
+        background-color: orangered;
+    }
+    .col-12{
+        width: 729px;
+        background-color: orchid;
+    }
  }
