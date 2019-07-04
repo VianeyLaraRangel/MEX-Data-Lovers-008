@@ -10,10 +10,15 @@ console.log(cardsGeneral);
 const cardOne = document.getElementById('card-one');
 console.log(cardOne);
 //1.2 Crear un elemento
+const element = document.createElement('h2');
 //1.3 Crear un nodo de texto
+const contenidoDeElement = document.createTextNode('Esta es la card');
 //1.4 Añadir el nodo de texto al elemento
+element.appendChild(contenidoDeElement);
 //1.5 Agregar atributos al elemento
+element.setAttribute('align', 'center');
 //1.6 Agregar el elemento al documento
+document.getElementById('imprime-nodo').appendChild(element);
 
 
 //Pasarle los datos
