@@ -1,3 +1,13 @@
+/*OCULTAR CONTENIDO*/
+.container{
+    display: none
+}
+/*PRUEBA MOSTRAR PRUEBA NODO*/
+.container2{
+    display: block
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,9 +35,9 @@
 
 
  /*Media queries para mobile 1280X720*/
- @media only screen and (max-width: 720px) {
+ @media  only screen and (max-width: 720px) {
     body {
-        background-color: whitesmoke;
+        background-color:bisque;
     }
     /*Estableciendo anchos de columna*/
         
@@ -44,3 +54,5 @@
     .col-11{width: 91.66666666666666%;}
     .col-12{width: 100%;}
  }
+
+ 
