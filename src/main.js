@@ -21,7 +21,7 @@ console.log(cardOne);
 //1.2 Crear un elemento
 const element = document.createElement('h2');
 //1.3 Crear un nodo de texto
-const contenidoDeElement = document.createTextNode('Esta es la card');
+const contenidoDeElement = document.createTextNode(pokemonesObject.name);
 //1.4 Añadir el nodo de texto al elemento
 element.appendChild(contenidoDeElement);
 //1.5 Agregar atributos al elemento
