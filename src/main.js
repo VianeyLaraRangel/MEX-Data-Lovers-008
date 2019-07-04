@@ -3,8 +3,19 @@
 //Declarar una variable en donde se guarde la llamada de la función con el acceso a la data
 //Declarar todos los botones que usaremos
 
-//Crear nodo
-//Pasarle los datos
+//1.Crear nodo
+//1.1 Llamar las cajas con las que vamos a trabajar
+const cardsGeneral = document.getElementById('cards-general');
+console.log(cardsGeneral);
+const cardOne = document.getElementById('card-one');
+console.log(cardOne);
+//1.2 Crear un elemento
+//1.3 Crear un nodo de texto
+//1.4 Añadir el nodo de texto al elemento
+//1.5 Agregar atributos al elemento
+//1.6 Agregar el elemento al documento
 
+
+//Pasarle los datos
 console.log(POKEMON);
 console.log(POKEMON.pokemon[0].name);
