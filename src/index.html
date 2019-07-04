@@ -10,58 +10,107 @@
 </head>
 
 <body>
-
-  <header>
-    <div class="container">
+  <!--Maqueta General-->
+  <div class="container">
+    <header class="main-head">
+      <!--Contenedor que abarca todo el canvas-->
       <div class="row">
-        <div class="col-3" class="logo">logo</div>
-        <h1>
-          <div class="col-8" class="titulo">Pokepedia</div>
-        </h1>
+        <div class="col-3" class="logo">
+          <img src="img/logoPrueba.jpg" alt="Logo-Pokepedia" title="Home" width="100px">
+        </div>
+        <div class="col-8" class="titulo">
+          <h1>Pokedia</h1>
+        </div>
         <div class="col-1">
           <button>?</button>
         </div>
       </div>
-  </header>
+    </header>
 
-  <nav>
-    <div class="row">
-      <div class="col-3">1° Gen</div>
-      <div class="col-6"></div>
-      <div class="col-3">Kanto</div>
-    </div>
-  </nav>
-  
-  <nav>
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-9"><input type="text"></div>
-      <div class="col-1">Icono buscar</div>
-      <div class="col-1"></div>
-    </div>  
-  </nav>
-  
-  <section>
+    <nav class="main-nav">
+      <div class="row">
+        <div class="col-3">
+          <h3>1° Gen</h3>
+        </div>
+        <div class="col-3">
+          <h3>Kanto</h3>
+        </div>
+      </div>
+    </nav>
+<br>
+    <form class="input-search">
+      <div class="row">
+        <div class="col-9">
+          <input type="text">
+        </div>
+        <div class="col-1">
+          <button><img src="" alt="">BUSCAR</button>
+        </div>
+      </div>
+    </form>
+<br>
+    <section class="card-box">
+      <div class="row" id="cards-general">
+        <div class="col-2" id="imprime-nodo">
+         <!--Agregar esto con un nodo del DOM-->
+          <p id="card-one">CARD 1</p>
+        </div>
+        <div class="col-2">
+          <p>CARD 2</p>
+        </div>
+        <div class="col-2">
+          <p>CARD 3</p>
+        </div>
+      </div>
+    </section>
+<br>
+    <section class="button-box">
+      <div class="row">
+        <div class="col-2">
+          <button>ASC</button>
+        </div>
+        <div class="col-2">
+          <button>DESC</button>
+        </div>
+      </div>
+    </section>
+<br>
+    <footer class="footer-buttons-box">
+      <div class="row">
+        <div class="col-2">
+          <button>
+            <img src="" alt="">TÓXICO
+          </button>
+        </div>
+        <div class="col-2">
+          <button>
+            <img src="" alt="">HIERBA
+          </button>
+        </div>
+        <div class="col-2">
+          <button>
+            <img src="" alt="">FUEGO
+          </button>
+        </div>
+        <div class="col-2">
+          <button>
+            <img src="" alt="">ELÉCTRICO
+          </button>
+        </div>
+        <div class="col-2">
+          <button>
+            <img src="" alt="">AGUA
+          </button>
+        </div>
+        <div class="col-2">
+          <button>
+            <img src="" alt="">ROCA
+          </button>
+        </div>
+      </div>
+    </footer>
 
-  </section>
-  
-  <div class="row">
-    <div class="col-3"></div>
-    <div class="col-2">boton</div>
-    <div class="col-2"></div>
-    <div class="col-2">boton</div>
-    <div class="col-3"></div>
-  </div>
-
-  <div class="row">
-    <div class="col-2">toxico</div>
-    <div class="col-2">hierba</div>
-    <div class="col-2">fuego</div>
-    <div class="col-2">electrico</div>
-    <div class="col-2">agua</div>
-    <div class="col-2">roca</div>
-  </div>
-
+ HEAD
   <!--Mine pantalla principal-->
   <!--AQUI SE IMPRIME EL PRIMER NOMBRE DEL POKEMÓN-->
 <section id="2">
@@ -97,8 +146,7 @@
 
 <!--PENDIENTE ASIGNAR ADDEVENTLISTENER A CADA BOTÓN-->
 
-
-
+  
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
