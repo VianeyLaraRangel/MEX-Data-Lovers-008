@@ -106,6 +106,7 @@ ayude a interactuar y entender mejor esos datos.
 
 - Este proyecto se resolvió en dupla.
   - Integrantes:
+
     * Minerva Meza Maldonado.
     * Leticia Vianey Lara Rangel.
 
@@ -124,6 +125,10 @@ ayude a interactuar y entender mejor esos datos.
 - Metodología:
   
   Fué usado el método **Ágile** por medio de tablero **Kanban en papel** para ser usado por el  _SQUAD_ de trabajo y con _TRELLO_ para el tablero **Kanban digital** que usamos en dupla en el desarrollo del proyecto.
+
+  ![Kan-ban](src/img/agile_kanBan_1.jpg)
+
+  ![Kan-ban](src/img/agile_kanBan_completo.jpg)
 
 - Herramientas:
 
