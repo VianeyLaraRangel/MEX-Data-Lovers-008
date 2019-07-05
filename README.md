@@ -55,7 +55,9 @@ ayude a interactuar y entender mejor esos datos.
 
 * Investigación
 
-  * Cuestionario
+  * [Cuestionario](https://forms.gle/EhS3LLSUzr2ZHaF2A)
+
+   ![Cuestionario](src/img/imagen-encuesta.jpg)
 
 
 ## Ideación
