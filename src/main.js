@@ -5,7 +5,6 @@ console.log(POKEMON);
 console.log(POKEMON.pokemon[0].name);
 console.log(POKEMON.pokemon[0].img);
 
-
 //Declarar una variable en donde se guarde la llamada de la función con el acceso a la data
 //Esta ruta va a servir para iterar sobre eso
 let pokemonesObject = POKEMON.pokemon[0];
