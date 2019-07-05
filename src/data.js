@@ -1,7 +1,3 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-//Hacer un objeto global
 //Hacer una llave y hacer de su propiedad una función
 //Dentro de la función, crear una variable que sea un arreglo vacío
 //Hacer un ciclo,bucle o loop(for in o for each)
@@ -10,10 +6,11 @@
 //Retornar el nuevo arreglo
 //Invocar la función dándole como argumento el arreglo
 
-const example = () => {
+const getData = () => {
   
 
-  return 'example';
+  return 'getData';
 };
 
-window.example = example;
+//Hacer un objeto global
+window.getData = getData;

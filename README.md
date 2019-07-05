@@ -8,10 +8,8 @@
 - [Consideraciones técnicas](#consideraciones-técnicas)
 - [Contenido de referencia](#contenido-de-referencia)
 - [Checklist](#checklist)
+---
 
----
----
----
 # Definición del producto
 
 ## Diseño de experiencia de usuario (User Experience Design)
@@ -178,19 +176,19 @@ de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario)
 ---
 # Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
 - [ ] Pasa linter (`npm pretest`)
 - [ ] Pasa tests (`npm test`)
 - [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
 - [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
