@@ -1,7 +1,7 @@
 //Aquí se debe manipular el DOM
 
 //Rutas a los datos para pasarlos
-console.log(POKEMON);
+//console.log(POKEMON);
 console.log(POKEMON.pokemon[0].name);
 console.log(POKEMON.pokemon[0].img);
 
