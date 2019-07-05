@@ -1,4 +1,5 @@
-//Aquí se debe manipular el DOM
+//PRUEBA DE CONSOLA
+//console.log(POKEMON.pokemon[0].name);
 
 //Rutas a los datos para pasarlos
 //console.log(POKEMON);
@@ -44,5 +45,3 @@ const imgElement = document.createElement('img');
 imgElement.setAttribute('src',pokemonesObject.img);
 //2.4 Agregar el elemento al documento
 document.getElementById('imprime-nodo').appendChild(imgElement);
-
-
