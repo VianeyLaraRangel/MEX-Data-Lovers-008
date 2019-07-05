@@ -19,7 +19,6 @@
     - ¿Quiénes son los principales usuarios de producto?
 
 
-
     - ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 
 
@@ -30,16 +29,20 @@
 
 
 - Historias de usuario
-    - PENDIENTE: Una vez que entiendas las necesidades de tu usuario, escribe las  que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition of done_) para cada una.
 
+1. Como usuario, quiero visualizar a todos los pokemones disponibles en cards.
+  * _Definition Of Done_ (DOD).
 
+    - Cuando el usuario acceda al producto, debe poder visualizar todas las tarjetas con la información básica de cada pokemón, si clickea estas cards, debe acceder a datos aún mas complejos.
+
+2.
+3.
+4.
 
 - Principios de diseño visual
 
     -  Fué importante que la interfaz a pesar de ser una versión mínima de nuestro ideal,
-siga los fundamentos de _visual design_.
+    siga los fundamentos de _visual design_.
 
 ---
 # Resumen del proyecto
@@ -50,18 +53,60 @@ Una vez que definas tu área de interés, entiende quién es tu usuario y qué
 necesita saber o ver exactamente; luego podrás construir la interfaz que le
 ayude a interactuar y entender mejor esos datos.
 
+* Investigación
+
+  * Cuestionario
+
 
 ## Ideación
--   Diseño de la Interfaz de Usuario
--    Prototipo de baja fidelidad
--   Prototipo de alta fidelidad
--   Testeos de usabilidad
--   Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+1. Diseño de la Interfaz de Usuario
 
+-   Prototipo de baja fidelidad
+      * Prototipo 1.1
+    
+      ![Ideación](src/img/ideacion_prototipo_1-1_principal.jpeg)
+
+      Card completa
+
+      ![Ideación](src/img/prototipo_1-1_card-completa.jpeg)
+
+      ![Ideación](src/img/prototipo_1-1_principal.jpeg)
+
+      * Prototipo 1.2
+
+      Durante la segunda iteración (Segundo sprint), después del feedback recibido, se añadieron a UI otras características.
+
+      1. HOME PAGE
+
+      ![Ideación](src/img/prototipo_2-1_principal.jpeg)
+
+      2. CARDS DE LA BUSQUEDA
+
+      ![Ideación](src/img/PROTOTIPO_2-1_CARD-BUSQUEDA.JPEG)
+
+      3. CARDS CUANDO SE ORDENA POR TIPO
+
+      ![Ideación](src/img/prototipo_2-1_card-ordenar-tipos.jpeg)
+
+      4. CARD PRINCIPAL, MUESTRA DATOS ESTADISTICOS
+
+      ![Ideación](src/img/prototipo_2-1_card-principal-datoestadistico.jpeg)
+
+-   Prototipo de alta fidelidad
+    * PENDIENTE
+-   Testeos de usabilidad
+    * [DEMO](https://marvelapp.com/62679bi/screen/58843258) con Marvel
+    * Entrevistas
+    
+-   Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+    * ![Solución ideal](src/img/UIideal.jpg)
 ---
 # Consideraciones generales
 
 - Este proyecto se resolvió en dupla.
+  - Integrantes:
+    * Minerva Meza Maldonado.
+    * Leticia Vianey Lara Rangel.
 
 - Tiempo para completarlo: Fueron 3 semanas divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
 
@@ -70,14 +115,14 @@ ayude a interactuar y entender mejor esos datos.
 
    La demo del producto está disponible gracias al host de GitHub Pages.
    
-  Puedes acceder dando click al enlace que se encuentra en la cabecera de este repositorio y/o dando click [aquí DEMO](https://vianeylararangel.github.io/MEX-008-Cipher/src).
+  Puedes acceder dando click al enlace que se encuentra en la cabecera de este repositorio y/o dando click [aquí DEMO](https://vianeylararangel.github.io/MEX-Data-Lovers-008/src/index.html).
 
 ---
 ## Detalles del proyecto
 
 - Metodología:
   
-  Fué usado el método **Ágile** por medio de tablero **Kanban en papel** para ser usado por el  _SQUAD_ de trabajo y con _TRELLO_ para el tablero **Kanban digital** que usé personalmente en el desarrollo del proyecto.
+  Fué usado el método **Ágile** por medio de tablero **Kanban en papel** para ser usado por el  _SQUAD_ de trabajo y con _TRELLO_ para el tablero **Kanban digital** que usamos en dupla en el desarrollo del proyecto.
 
 - Herramientas:
 
@@ -140,6 +185,8 @@ En este proyecto NO fueron usadas librerías o
 frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
 con la excepción de librerías para hacer gráficas (charts); ver
 [_Hacker Edition_](#parte-opcional-hacker-edition) más arriba.
+
+PENDIENTE
 
 Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
   ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
