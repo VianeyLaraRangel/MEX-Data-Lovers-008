@@ -8,6 +8,7 @@
 - [Consideraciones técnicas](#consideraciones-técnicas)
 - [Contenido de referencia](#contenido-de-referencia)
 - [Checklist](#checklist)
+---
 
 # Definición del producto
 
@@ -16,7 +17,6 @@
 - Investigación con usuarios / entrevistas
 
     - ¿Quiénes son los principales usuarios de producto?
-
 
 
     - ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
@@ -30,17 +30,21 @@
 
 - Historias de usuario
 
-    - PENDIENTE: Una vez que entiendas las necesidades de tu usuario,escribe las  que representen
-todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition of done_) para cada una.
+1. Como usuario, quiero visualizar a todos los pokemones disponibles en cards.
+  * _Definition Of Done_ (DOD).
 
+    - Cuando el usuario acceda al producto, debe poder visualizar todas las tarjetas con la información básica de cada pokemón, si clickea estas cards, debe acceder a datos aún mas complejos.
+
+2.
+3.
+4.
 
 - Principios de diseño visual
 
     -  Fué importante que la interfaz a pesar de ser una versión mínima de nuestro ideal,
-siga los fundamentos de _visual design_.
+    siga los fundamentos de _visual design_.
 
-
+---
 # Resumen del proyecto
 
 NOTA: DESARROLLAR LA TEMÁTICA Y POR QUÉ LA ELEGIMOS, BASADA EN LO ANTERIOR
@@ -49,45 +53,62 @@ Una vez que definas tu área de interés, entiende quién es tu usuario y qué
 necesita saber o ver exactamente; luego podrás construir la interfaz que le
 ayude a interactuar y entender mejor esos datos.
 
-## UX Research
+* Investigación
 
-Creamos un cuestionario con Forms de Google :
+  * [Cuestionario](https://forms.gle/EhS3LLSUzr2ZHaF2A)
 
-[![cuestionario](src/img/imagen-encuesta.png)](https://docs.google.com/forms/d/e/1FAIpQLSeXwcFO60klb_23S_vqdE7kWCNjiNjNA3GPC6zY2FYBIpU5SA/viewform)  para recopilar información de los posibles usuarios a los que podría interesar una página web sobre Pokemón.
-
-Consideramos unicamente a la primera generación de pokemones durante la primera iteración del proyecto y el objetivo es averiguar caracterisiticas del usuario.
-
-Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rango de edad y el género. Esperando descubrir el impacto que tuvo está generación en su época.
-
-
+   ![Cuestionario](src/img/imagen-encuesta.jpg)
 
 ## Ideación
+1. Diseño de la Interfaz de Usuario
 
-1.  Diseño de la Interfaz de Usuario
--    Prototipo de baja fidelidad:
- 
-  **Prototipo 1.0**
+-   Prototipo de baja fidelidad
+      * Prototipo 1.1
+    
+      ![Ideación](src/img/ideacion_prototipo_1-1_principal.jpeg)
 
-![Sketch](src/img/sketch1.jpeg)
+      Card completa
 
-![Sketch de la card](src/img/sketch2.jpeg)
- 
+      ![Ideación](src/img/prototipo_1-1_card-completa.jpeg)
+
+      ![Ideación](src/img/prototipo_1-1_principal.jpeg)
+
+      * Prototipo 1.2
+
+      Durante la segunda iteración (Segundo sprint), después del feedback recibido, se añadieron a UI otras características.
+
+      1. HOME PAGE
+
+      ![Ideación](src/img/prototipo_2-1_principal.jpeg)
+
+      2. CARDS DE LA BUSQUEDA
+
+      ![Ideación](src/img/PROTOTIPO_2-1_CARD-BUSQUEDA.JPEG)
+
+      3. CARDS CUANDO SE ORDENA POR TIPO
+
+      ![Ideación](src/img/prototipo_2-1_card-ordenar-tipos.jpeg)
+
+      4. CARD PRINCIPAL, MUESTRA DATOS ESTADISTICOS
+
+      ![Ideación](src/img/prototipo_2-1_card-principal-datoestadistico.jpeg)
+
 -   Prototipo de alta fidelidad
-
-    - [ejemplo ideal](https://dribbble.com/shots/6579658-Pokemon-Pokedex-Nation-Dex)
-
-
-![Ejemplo ideal](src/img/UIideal.png)
-
+    * PENDIENTE
 -   Testeos de usabilidad
-
+    * [DEMO](https://marvelapp.com/62679bi/screen/58843258) con Marvel
+    * Entrevistas
+    
 -   Implementación de la Interfaz de Usuario (HTML/CSS/JS)
-
+    * ![Solución ideal](src/img/UIideal.jpg)
 ---
-
 # Consideraciones generales
 
 - Este proyecto se resolvió en dupla.
+  - Integrantes:
+
+    * Minerva Meza Maldonado.
+    * Leticia Vianey Lara Rangel.
 
 - Tiempo para completarlo: Fueron 3 semanas divididas en 3 sprints (una entrega del producto funcional al término de cada sprint).
 
@@ -96,14 +117,18 @@ Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rang
 
    La demo del producto está disponible gracias al host de GitHub Pages.
    
-  Puedes acceder dando click al enlace que se encuentra en la cabecera de este repositorio y/o dando click [aquí DEMO](https://vianeylararangel.github.io/MEX-008-Cipher/src).
+  Puedes acceder dando click al enlace que se encuentra en la cabecera de este repositorio y/o dando click [aquí DEMO](https://vianeylararangel.github.io/MEX-Data-Lovers-008/src/index.html).
 
 ---
 ## Detalles del proyecto
 
 - Metodología:
   
-  Fué usado el método **Ágile** por medio de tablero **Kanban en papel** para ser usado por el  _SQUAD_ de trabajo y con _TRELLO_ para el tablero **Kanban digital** que usé personalmente en el desarrollo del proyecto.
+  Fué usado el método **Ágile** por medio de tablero **Kanban en papel** para ser usado por el  _SQUAD_ de trabajo y con _TRELLO_ para el tablero **Kanban digital** que usamos en dupla en el desarrollo del proyecto.
+
+  ![Kan-ban](src/img/agile_kanBan_1.jpg)
+
+  ![Kan-ban](src/img/agile_kanBan_completo.jpg)
 
 - Herramientas:
 
@@ -117,6 +142,7 @@ Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rang
 
 ## Hacker edition
 PENDIENTE
+
 NOTA: CREAR UNA CARPETA Y LINKEAR ESTA INFORMACION.
 
 
@@ -166,6 +192,8 @@ frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vani
 con la excepción de librerías para hacer gráficas (charts); ver
 [_Hacker Edition_](#parte-opcional-hacker-edition) más arriba.
 
+PENDIENTE
+
 Agregarle a tu interfaz de usuario implementada visualizaciones gráficas. Para
   ello te recomendamos explorar librerías de gráficas como [Chart.js](https://www.chartjs.org/)
   o [Google Charts](https://developers.google.com/chart/).
@@ -201,19 +229,19 @@ de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario)
 ---
 # Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de `this`.
+- [x] Usa VanillaJS.
+- [x] No hace uso de `this`.
 - [ ] Pasa linter (`npm pretest`)
 - [ ] Pasa tests (`npm test`)
 - [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
       lines y branches.
-- [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-- [ ] Incluye historias de usuario en `README.md`.
-- [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+- [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
+- [x] Incluye historias de usuario en `README.md`.
+- [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
       `README.md`.
 - [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
       en `README.md`.
-- [ ] Incluye el listado de problemas que detectaste a través de tests de
+- [x] Incluye el listado de problemas que detectaste a través de tests de
       usabilidad en el `README.md`.
 - [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
