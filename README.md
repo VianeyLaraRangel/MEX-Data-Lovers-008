@@ -59,6 +59,8 @@ Consideramos unicamente a la primera generación de pokemones durante la primera
 
 Por ejemplo, la encuesta se envió a todo tipo de personas y preguntamos el rango de edad y el género. Esperando descubrir el impacto que tuvo está generación en su época.
 
+En el siguiente enlace se muestran los resultados obtenidos en una tabla (https://docs.google.com/spreadsheets/d/1wmhWSBEIqWpuemLeq4l4p2QuM3YkgrNdm-yOIccSCb8/edit?usp=sharing) 
+
 
 
 ## Ideación
