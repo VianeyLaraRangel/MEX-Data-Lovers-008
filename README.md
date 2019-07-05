@@ -59,7 +59,6 @@ ayude a interactuar y entender mejor esos datos.
 
    ![Cuestionario](src/img/imagen-encuesta.jpg)
 
-
 ## Ideación
 1. Diseño de la Interfaz de Usuario
 
