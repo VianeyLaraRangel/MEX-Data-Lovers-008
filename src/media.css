@@ -1,5 +1,4 @@
 /*Media queries para mobile 1280X720*/
-
 @media  only screen and (max-width: 720px) {
     body {
         background-color:bisque;
