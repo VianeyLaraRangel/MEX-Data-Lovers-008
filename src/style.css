@@ -60,6 +60,10 @@ background-color: #e8cd59;
   background-color: #0e3771;
 }
 
+/*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
+[class*= "col-"]{
+    border: 1px solid black;
+  }
 
 /*Para Grid layout (MDN documentaion)
 .container {
@@ -75,11 +79,6 @@ background-color: #e8cd59;
     "print"
     "orderData"
     "footer"
-}
-
-/*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
-[class*= "col-"]{
-    border: 1px solid black;
 }
 
 /*.main-head {
