@@ -1,21 +1,28 @@
 
-/*OCULTAR CONTENIDO*/
+/*OCULTAR CONTENIDO
 .container{
     display: none
 }
-/*PRUEBA MOSTRAR PRUEBA NODO*/
+/*PRUEBA MOSTRAR PRUEBA NODO
 .container2{
     display: block
 }
+*/
 
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 
-* {
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/*Definiendo caracteristicas del container que contendrá todo*/
+/*Definiendo caracteristicas del container de todo*/
+.main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
+  padding: 1em 2em;
+}
+
+
+/*Para Grid layout (MDN documentaion)
 .container {
     width: 100%;
     max-width: 1280px;
@@ -93,3 +100,4 @@
     .col-11{width: 91.66666666666666%;}
     .col-12{width: 100%;}
 
+  }
