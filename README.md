@@ -58,6 +58,8 @@ ayude a interactuar y entender mejor esos datos.
   * [Cuestionario](https://forms.gle/EhS3LLSUzr2ZHaF2A)
 
    ![Cuestionario](src/img/imagen-encuesta.jpg)
+   
+   En el siguiente [enlace](https://docs.google.com/spreadsheets/d/1wmhWSBEIqWpuemLeq4l4p2QuM3YkgrNdm-yOIccSCb8/edit?usp=sharing) se muestran los resultados obtenidos en una tabla  
 
 ## Ideación
 1. Diseño de la Interfaz de Usuario
@@ -70,6 +72,7 @@ ayude a interactuar y entender mejor esos datos.
       Card completa
 
       ![Ideación](src/img/prototipo_1-1_card-completa.jpeg)
+
 
       ![Ideación](src/img/prototipo_1-1_principal.jpeg)
 
