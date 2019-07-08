@@ -1,12 +1,11 @@
+//onload = window.alert('Bienvenido a pokepedia!');
 //Declarar una variable en donde se guarde la llamada de la función con el acceso al array para iterar
 const pokemonesArray = POKEMON.pokemon;
 const pokemonesObject = POKEMON.pokemon[0];
 
 //Declarar variables en donde se imprimen los nodos
 const cardsGeneral = document.getElementById('cards-general');
-const cardOne = document.getElementById('card-one');
 console.log(cardsGeneral);
-console.log(cardOne);
 const cardResult = document.getElementById('imprime-nodo');
 console.log(cardResult);
 
@@ -22,28 +21,42 @@ const buttonPokeType = document.getElementById('poison-type');
 //a)Evento para imprimir todos los pokemones en la pantalla principal
 
 buttonHomePokemones.addEventListener('click', () => {
-    const printCard = [];
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {
         let pokemonesObject = POKEMON.pokemon[i];
+        let printCard = [];
         console.log(pokemonesObject);
+        console.log(printCard);
         // console.log(pokemonesObject.name);
         // console.log(pokemonesObject.img);
         // console.log(pokemonesObject.id);
         // console.log(pokemonesObject.type[0]);
+        
         let element = document.createElement('h2');
         console.log(element);
-        let contenidoDeElement = document.createTextNode(pokemonesObject.name);
+        let contenidoDeElement = document.createTextNode(pokemonesObject['name']);
         console.log(contenidoDeElement);
         element.appendChild(contenidoDeElement);
         element.setAttribute('align', 'center');
-        const printCard = cardResult.appendChild(element);
+        printCard = cardResult.appendChild(element);
         console.log(printCard);
 
         let imgElement = document.createElement('img');
         imgElement.setAttribute('src', pokemonesObject.img);
         printCard.appendChild(imgElement);
+        // cardResult.insertBefore(imgElement, cardResult.childNodes[i]);
     }
+    // const mostrarPropiedades = (objeto, nombreObjeto) => {
+    //     let resultado = '';
+    //     for (let i in objeto) {
+    //       //objeto.hasOwnProperty se usa para filtrar las propiedades del objeto
+    //       if (objeto.hasOwnProperty(i)) {
+    //           resultado += `${nombreObjeto}.${i} = ${objeto[i]}\n`;
+    //       }
+    //     }
+    //     return resultado;
+    //   };
+    //   console.log(mostrarPropiedades(miAuto, "miAuto"));
 });
 
 // // 1.Crear nodo de texto
@@ -129,16 +142,13 @@ buttonHelp.addEventListener('click', () => {
     //alert('funciona');
 });
 
-
 buttonSearchPokemon.addEventListener('click', () => {
     //alert('funciona');
 });
 
-
 buttonAsc.addEventListener('click', () => {
     alert('funciona');
 });
-
 
 buttonDesc.addEventListener('click', () => {
     alert('funciona');
