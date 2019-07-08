@@ -17,6 +17,7 @@
     padding: 0;
   }
 
+  
 /*Definiendo caracteristicas del container de todo*/
 .main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
   padding: 1em 2em;
@@ -28,13 +29,18 @@
 }
 
 .main-head {
-  background-color: #0e3771;
+  background-color: white;
   height: auto;
   width: inherit;
 }
 
 .logo .img {
 max-width: 100%;
+}
+
+.titulo {
+  background-color: #2263ca;
+  max-width: 100%;
 }
 
 .main-nav {
@@ -44,31 +50,56 @@ max-width: 100%;
 
 .lateral-content {
 width: 30%;
-background-color: #e8cd59;
+background-color: #efc207;
 }
 
 .card-box {
   width: 40%;
   height: auto;
-  background-color: #e71d24;
+  background-color: #fa0404;
   margin-bottom: 1em;
 }
 
 .button-box {
   width: 30%;
-  background-color: #e8cd59;
+  background-color: #efc207;
 }
 
 .footer-buttons-box {
   width: 100%;
   height: auto;
-  background-color: #0e3771;
+  background-color: #2263ca;
+  text-align: center;
 }
 
 /*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
 [class*= "col-"]{
     border: 1px solid black;
+    float: left;
+    min-height: 10px;
+    padding: 10px;
   }
+/*Estableciendo los porcentajes ancho de columna para grid*/
+  .col-1{width: 8.333333333333332%;}
+    .col-2{width: 16.666666666666664%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33333333333333%;}
+    .col-5{width: 41.66666666666667%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.333333333333336%;}
+    .col-8{width: 66.66666666666666%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33333333333334%;}
+    .col-11{width: 91.66666666666666%;}
+    .col-12{width: 100%;}
+
+    /*Estilo para las filas*/
+  .row {
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
 
 /*Para Grid layout (MDN documentaion)
 .container {
