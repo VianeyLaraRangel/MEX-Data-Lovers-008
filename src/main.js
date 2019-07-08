@@ -39,6 +39,10 @@ buttonHomePokemones.addEventListener('click', () => {
         element.setAttribute('align', 'center');
         const printCard = cardResult.appendChild(element);
         console.log(printCard);
+
+        let imgElement = document.createElement('img');
+        imgElement.setAttribute('src', pokemonesObject.img);
+        printCard.appendChild(imgElement);
     }
 });
 
