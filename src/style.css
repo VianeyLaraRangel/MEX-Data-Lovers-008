@@ -11,16 +11,17 @@
 
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 
+
 .container {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+    margin: 0px auto;
+    height: 100vh;
   }
 
   
 /*Definiendo caracteristicas del container de todo*/
 .main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
-  padding: 1em 2em;
+  padding: 1em 2em 1em 2em;
 }
 
 .main-nav, .input-search, .lateral-content, .card-box, .button-box, .footer-buttons-box {
@@ -29,17 +30,15 @@
 }
 
 .main-head {
-  background-color: white;
-  height: auto;
-  width: inherit;
+  background-color: #fa0404;
+  height: 150px;
 }
 
 .logo .img {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .titulo {
-  background-color: #2263ca;
   max-width: 100%;
 }
 
@@ -70,6 +69,7 @@ background-color: #efc207;
   height: auto;
   background-color: #2263ca;
   text-align: center;
+  align-items: flex-end;
 }
 
 /*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
@@ -79,6 +79,11 @@ background-color: #efc207;
     min-height: 10px;
     padding: 10px;
   }
+
+  /*[class*= "row"] {
+    display: flex;
+    align-content: space-between;
+  }*/
 /*Estableciendo los porcentajes ancho de columna para grid*/
   .col-1{width: 12.5%;}
     .col-2{width: 25%;}
@@ -91,9 +96,7 @@ background-color: #efc207;
 
     /*Estilo para las filas*/
   .row {
-    margin: auto;
-    width: 100%;
-    height: auto;
+    display: flex;
   }
 
 
