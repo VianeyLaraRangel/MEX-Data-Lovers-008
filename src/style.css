@@ -21,7 +21,6 @@
 /*Definiendo caracteristicas del container de todo*/
 .main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
   padding: 1em 2em;
-  position: inherit;
 }
 
 .main-nav, .input-search, .lateral-content, .card-box, .button-box, .footer-buttons-box {
