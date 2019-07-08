@@ -1,21 +1,76 @@
 
-/*OCULTAR CONTENIDO*/
+/*OCULTAR CONTENIDO
 .container{
     display: none
 }
-/*PRUEBA MOSTRAR PRUEBA NODO*/
+/*PRUEBA MOSTRAR PRUEBA NODO
 .container2{
     display: block
 }
+*/
 
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 
-* {
+.container {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+/*Definiendo caracteristicas del container de todo*/
+.main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
+  padding: 1em 2em;
 }
-/*Definiendo caracteristicas del container que contendrá todo*/
+
+.main-nav, .input-search, .lateral-content, .card-box, .button-box, .footer-buttons-box {
+  float: left;
+  box-sizing: border-box;
+}
+
+.main-head {
+  background-color: #0e3771;
+  height: auto;
+  width: inherit;
+}
+
+.logo .img {
+max-width: 100%;
+}
+
+.main-nav {
+  width: 100%;
+  background-color: #2263ca;
+}
+
+.lateral-content {
+width: 30%;
+background-color: #e8cd59;
+}
+
+.card-box {
+  width: 40%;
+  height: auto;
+  background-color: #e71d24;
+  margin-bottom: 1em;
+}
+
+.button-box {
+  width: 30%;
+  background-color: #e8cd59;
+}
+
+.footer-buttons-box {
+  width: 100%;
+  height: auto;
+  background-color: #0e3771;
+}
+
+/*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
+[class*= "col-"]{
+    border: 1px solid black;
+  }
+
+/*Para Grid layout (MDN documentaion)
 .container {
     width: 100%;
     max-width: 1280px;
@@ -31,23 +86,18 @@
     "footer"
 }
 
-/*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
-[class*= "col-"]{
-    border: 1px solid black;
-}
-
-.main-head {
+/*.main-head {
     grid-area: header;
-    /*.logo-box {
+    .logo-box {
         float: left;
         margin-right: 15px;
         width: 150px;
         height: 150px;
         border-radius: 5px;
         padding: 1em;
-      }      */
+      }      
   }
-  .main-nav {
+  /*.main-nav {
     grid-area: nav;
   }
   .input-search {
@@ -70,26 +120,3 @@
         bottom:5px;
         right:10px;
      }   */
-  }
-
- /*Media queries para mobile 1280X720*/
-
- @media  only screen and (max-width: 720px) {
-    body {
-        background-color:bisque;
-    }
-    /*Estableciendo anchos de columna*/
-        
-    .col-1{width: 8.333333333333332%;}
-    .col-2{width: 16.666666666666664%;}
-    .col-3{width: 25%;}
-    .col-4{width: 33.33333333333333%;}
-    .col-5{width: 41.66666666666667%;}
-    .col-6{width: 50%;}
-    .col-7{width: 58.333333333333336%;}
-    .col-8{width: 66.66666666666666%;}
-    .col-9{width: 75%;}
-    .col-10{width: 83.33333333333334%;}
-    .col-11{width: 91.66666666666666%;}
-    .col-12{width: 100%;}
-

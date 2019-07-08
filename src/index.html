@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <!--Haciendo un cambio-->
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Lovers</title>
   <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">Enlace a W3.CSS-->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -14,7 +14,6 @@
   <!--Contenedor que abarca todo el canvas-->
   <div class="container">
     <header class="main-head">
-
       <div class="row">
         <div class="col-3" class="logo">
           <img src="img/logoPrueba.jpg" alt="Logo-Pokepedia" title="Home" width="100px">
@@ -23,7 +22,7 @@
           <h1>Pokedia</h1>
         </div>
         <div class="col-1">
-          <button>?</button>
+          <button>modalBuscar</button>
         </div>
       </div>
     </header>
@@ -38,18 +37,24 @@
         </div>
       </div>
     </nav>
+    
     <br>
-    <form class="input-search">
-      <div class="row">
-        <div class="col-9">
-          <input type="text">
+
+    <aside class="lateral-content">
+      <form class="input-search">
+        <div class="row">
+          <div class="col-9">
+            <input type="text">
+          </div>
+          <div class="col-1">
+            <button><img src="" alt="">BUSCAR</button>
+          </div>
         </div>
-        <div class="col-1">
-          <button><img src="" alt="">BUSCAR</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </aside>
+    
     <br>
+    
     <section class="card-box">
       <div class="row" id="cards-general">
         <div class="col-2" id="imprime-nodo">
@@ -58,27 +63,27 @@
         </div>
         <div class="col-2">
           <p>CARD 2</p>
-        </div>!--
+        </div>
         <div class="col-2">
           <p>CARD 3</p>
         </div>
       </div>
     </section>
     <br>
-<!--CARD CON LA INFO DEL POKEMÓN -->
-<!--AQUÍ INICIA LA CARD-->
-<!--AQUÍ TERMINA LA CARD-->
+    <!--CARD CON LA INFO DEL POKEMÓN -->
+    <!--AQUÍ INICIA LA CARD-->
+    <!--AQUÍ TERMINA LA CARD-->
 
 
-<!--AQUÍ COMIENZA LA CARD DE LA BÚSQUEDA-->
-<!--AQUÍ INICIA LA CARD-->
-<!--AQUÍ TERMINA LA CARD-->
+    <!--AQUÍ COMIENZA LA CARD DE LA BÚSQUEDA-->
+    <!--AQUÍ INICIA LA CARD-->
+    <!--AQUÍ TERMINA LA CARD-->
 
 
-<!--AQUÍ COMIENZA EL HOME PAGE -->
-<!--AQUÍ INICIA LA CARD-->
-<!--AQUÍ TERMINA LA CARD-->
-<br>
+    <!--AQUÍ COMIENZA EL HOME PAGE -->
+    <!--AQUÍ INICIA LA CARD-->
+    <!--AQUÍ TERMINA LA CARD-->
+    <br>
     <section class="button-box">
       <div class="row">
         <div class="col-2">
@@ -90,8 +95,8 @@
       </div>
     </section>
     <br>
-<!--AQUÍ TERMINA MAQUETA DINÁMICA -->
-     <footer class="footer-buttons-box">
+    <!--AQUÍ TERMINA MAQUETA DINÁMICA -->
+    <footer class="footer-buttons-box">
       <div class="row">
         <div class="col-2">
           <button>
@@ -126,12 +131,9 @@
       </div>
     </footer>
 
-  <!--Mine para diferentes pantallas-->
-  <!--Cards largas-->
-
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
