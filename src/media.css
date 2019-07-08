@@ -2,7 +2,7 @@
 /*Desktop (780 a 1080px*/
 @media screen and (max-width: 1080px) {
     body {
-        background-color: #557b98;
+        background-color:whitesmoke;
     }
     /*Estableciendo anchos de columna*/
     /*.col-1{width: 8.333333333333332%;}

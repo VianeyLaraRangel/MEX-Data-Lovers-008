@@ -28,13 +28,18 @@
 }
 
 .main-head {
-  background-color: #0e3771;
+  background-color: white;
   height: auto;
   width: inherit;
 }
 
 .logo .img {
 max-width: 100%;
+}
+
+.titulo {
+  background-color: #2263ca;
+  max-width: 100%;
 }
 
 .main-nav {
@@ -44,25 +49,26 @@ max-width: 100%;
 
 .lateral-content {
 width: 30%;
-background-color: #e8cd59;
+background-color: #efc207;
 }
 
 .card-box {
   width: 40%;
   height: auto;
-  background-color: #e71d24;
+  background-color: #fa0404;
   margin-bottom: 1em;
 }
 
 .button-box {
   width: 30%;
-  background-color: #e8cd59;
+  background-color: #efc207;
 }
 
 .footer-buttons-box {
   width: 100%;
   height: auto;
-  background-color: #0e3771;
+  background-color: #2263ca;
+  text-align: center;
 }
 
 /*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
