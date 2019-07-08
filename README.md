@@ -67,14 +67,14 @@ ayude a interactuar y entender mejor esos datos.
 -   Prototipo de baja fidelidad
       * Prototipo 1.1
     
-      ![Ideación](src/img/ideacion_prototipo_1-1_principal.jpeg)
+      ![Ideación](src/img/Ideacion_prototipo_1-1_principal.jpeg)
 
       Card completa
 
       ![Ideación](src/img/prototipo_1-1_card-completa.jpeg)
 
 
-      ![Ideación](src/img/prototipo_1-1_principal.jpeg)
+      ![Ideación](src/img/Prototipo_1-1_principal.jpeg)
 
       * Prototipo 1.2
 
@@ -86,7 +86,7 @@ ayude a interactuar y entender mejor esos datos.
 
       2. CARDS DE LA BUSQUEDA
 
-      ![Ideación](src/img/PROTOTIPO_2-1_CARD-BUSQUEDA.JPEG)
+      ![Ideación](src/img/prototipo_2-1_card-busqueda.jpeg)
 
       3. CARDS CUANDO SE ORDENA POR TIPO
 
@@ -94,7 +94,7 @@ ayude a interactuar y entender mejor esos datos.
 
       4. CARD PRINCIPAL, MUESTRA DATOS ESTADISTICOS
 
-      ![Ideación](src/img/prototipo_2-1_card-principal-datoestadistico.jpeg)
+      ![Ideación](src/img/prototipo_2-1_card-principal-datoEstadistico.jpeg)
 
 -   Prototipo de alta fidelidad
     * PENDIENTE
