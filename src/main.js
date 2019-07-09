@@ -12,9 +12,8 @@ const buttonDesc = document.getElementById('boton-desc');
 const buttonPokeType = document.getElementById('poison-type');
 
 //Declarar variables en donde se imprimen los nodos
-// //Section
 const cardBox = document.getElementById('card-box');
-//col-8 
+const cardsGeneral = document.getElementById('cards-general');
 const cardResult = document.getElementById('imprime-nodo');
 
 //a)Evento para imprimir todos los pokemones en la pantalla principal
@@ -54,12 +53,11 @@ buttonHomePokemones.addEventListener('click', () => {
 });
 
 buttonHelp.addEventListener('click', () => {
-    //alert('funciona');
+    alert('funciona');
 });
 
 buttonSearchPokemon.addEventListener('click', () => {
     //alert('funcionaaa');
-   
 
 });
 
@@ -75,18 +73,3 @@ buttonDesc.addEventListener('click', () => {
 buttonPokeType.addEventListener('click', () => {
     alert('funciona');
 });
-
-//const dataPok = POKEMON.pokemon;
-// console.log(dataPok);
-// const newArray = dataPok.filter (pokemon => pokemon.type[0] === 'Fire');
-// console.log(newArray);
-
-// const pokemonEgg = newArray.filter(pokemon =>pokemon.type[0] !== 'egg');
-// console.log(pokemonEgg);
-
-// const buttonPok = getElementByClassName ('btn-pok'); 
-// for (let i = 0; i <buttonPok.length; i++) {
-// buttonPok[i].addEventListener('click', () => {
-// console.log(event.target.id);
-// })
-// };
