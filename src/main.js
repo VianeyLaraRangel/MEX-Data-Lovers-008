@@ -24,10 +24,8 @@ const cardResult = document.getElementById('imprime-nodo');
 buttonHomePokemones.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {
-            let printCard = [];
             let pokemonesObject = POKEMON.pokemon[i];
-            printCard = Object.keys(pokemonesObject);
-            printCardValues = Object.values(printCard);
+            let printCard = Object.keys(pokemonesObject);
 
     //Crear elementos (html)
             let pokeName = document.createElement('h2');
@@ -60,8 +58,7 @@ buttonHomePokemones.addEventListener('click', () => {
         cardBox.appendChild(cardResult);
 
 
-        // cardResult.insertBefore(imgElement, cardResult.childNodes[i]);
-    }
+            }
     // const mostrarPropiedades = (objeto, nombreObjeto) => {
     //     let resultado = '';
     //     for (let i in objeto) {
