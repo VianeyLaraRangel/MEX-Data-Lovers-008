@@ -1,4 +1,5 @@
-var POKEMON = {
+/* eslint-disable no-unused-vars */
+const POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",

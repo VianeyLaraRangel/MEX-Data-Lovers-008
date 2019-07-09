@@ -1,32 +1,35 @@
 /*Aquí Media queries*/
 /*Desktop (780 a 1080px*/
-@media screen and (max-width: 1080px) {
+@media (max-width: 1440px) {
     body {
         background-color:whitesmoke;
     }
+  /*Estableciendo los porcentajes ancho de columna para grid*/
+    .col-1{width: 12.5%;}
+    .col-2{width: 25%;}
+    .col-3{width: 37.5%;}
+    .col-4{width: 50%;}
+    .col-5{width: 62.5%;}
+    .col-6{width: 75%;}
+    .col-7{width: 87.5%;}
+    .col-8{width: 100%;}
     /*Estableciendo anchos de columna*/
 }
-/*Tablet o mobile 480 a 779px*/
-@media  screen and (max-width: 780px) {
+/*Tablet o mobile 480 a 768px*/
+@media (max-width: 768px) {
     body {
         background-color: #5d6270;
     }
     /*Estableciendo anchos de columna*/
-    .col-1{width: 8.333333333333332%;}
-    .col-2{width: 16.666666666666664%;}
-    .col-3{width: 25%;}
-    .col-4{width: 33.33333333333333%;}
-    .col-5{width: 41.66666666666667%;}
-    .col-6{width: 50%;}
-    .col-7{width: 58.333333333333336%;}
-    .col-8{width: 66.66666666666666%;}
-    .col-9{width: 75%;}
-    .col-10{width: 83.33333333333334%;}
-    .col-11{width: 91.66666666666666%;}
-    .col-12{width: 100%;}
+    .col-1-md{width: 16.66666666666666%;}
+    .col-2-md{width: 33.3333333333333%;}
+    .col-3-md{width: 50%;}
+    .col-4-md{width: 66.6666666666666%;}
+    .col-5-md{width: 83.33333333333333%;}
+    .col-6-md{width: 100%;}
   }
 /*Mobile menor a 480px*/
-@media  screen and (max-width: 480px) {
+@media (max-width: 480px) {
     body {
         background-color: #e8cd59;
     }
