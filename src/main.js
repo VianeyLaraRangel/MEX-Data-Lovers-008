@@ -1,49 +1,78 @@
-//PRUEBA DE CONSOLA
-//console.log(POKEMON.pokemon[0].name);
-
-//Rutas a los datos para pasarlos
-//console.log(POKEMON);
-console.log(POKEMON.pokemon[0].name);
-console.log(POKEMON.pokemon[0].img);
-
-//Declarar una variable en donde se guarde la llamada de la función con el acceso a la data
-//Esta ruta va a servir para iterar sobre eso
-
-let pokemonesObject = POKEMON.pokemon[0];
-console.log(pokemonesObject);
+//onload = window.alert('Bienvenido a pokepedia!');
+//Variables globales con el acceso a la data para iterar
+const pokemonesArray = POKEMON.pokemon;
+const pokemonesObject = POKEMON.pokemon[0];
 
 //Declarar todos los botones que usaremos
+const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
+const buttonHelp = document.getElementById('ayuda-modal');
+const buttonSearchPokemon = document.getElementById('busca-pokemon');
+const buttonAsc = document.getElementById('boton-asc');
+const buttonDesc = document.getElementById('boton-desc');
+//Seis (6) botones
+const buttonPokeType = document.getElementById('poison-type');
 
-
-//Escribir una función que itere por el arreglo para pasarla a un evento que escuche un click
-
-//1.Crear nodo de texto
-//1.1 Llamar las cajas con las que vamos a trabajar
+//Declarar variables en donde se imprimen los nodos
+const cardBox = document.getElementById('card-box');
 const cardsGeneral = document.getElementById('cards-general');
-//console.log(cardsGeneral);
-const cardOne = document.getElementById('card-one');
-//console.log(cardOne);
-//1.2 Crear un elemento
-const element = document.createElement('h2');
-//1.3 Crear un nodo de texto
-const contenidoDeElement = document.createTextNode(pokemonesObject.name);
-console.log(contenidoDeElement);
-//1.4 Añadir el nodo de texto al elemento
-element.appendChild(contenidoDeElement);
-//1.5 Agregar atributos al elemento
-element.setAttribute('align', 'center');
-//1.6 Agregar el elemento al documento
-document.getElementById('imprime-nodo').appendChild(element);
+const cardResult = document.getElementById('imprime-nodo');
 
-//2. Crear nodo de imagen
-//2.1 Llamar la constante que guarda la card
-console.log(cardsGeneral);
-console.log(cardOne);
-//2.2 Crear un elemento img
-const imgElement = document.createElement('img');
-//2.3 Agregar la imagen al elemento con el atributo src
-imgElement.setAttribute('src',pokemonesObject.img);
-//2.4 Agregar el elemento al documento
-document.getElementById('imprime-nodo').appendChild(imgElement);
+//a)Evento para imprimir todos los pokemones en la pantalla principal
+buttonHomePokemones.addEventListener('click', () => {
+    //Escribir un bucle que itere por el arreglo
+    for (let i = 0; i < pokemonesArray.length; i++) {
+            let pokemonesObject = POKEMON.pokemon[i];
+            let printCard = Object.keys(pokemonesObject);
 
+    //Crear elementos (html)
+            let pokeName = document.createElement('h2');
+            let pokeImg = document.createElement('img');
+            let pokeType = document.createElement('p');
+    //Crear nodos (contenido de los hijos para su madre/padre)
+        let pokeNameContent = document.createTextNode(pokemonesObject.name);
+        console.log(pokeNameContent);
 
+        let pokeImgContent = document.createTextNode(pokemonesObject.img);
+        console.log(pokeImgContent);
+
+        let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
+        console.log(pokeTypeContent);
+    
+    //Hacer de los nodos hijos de los elementos
+        pokeName.appendChild(pokeNameContent);
+        pokeName.setAttribute('align', 'center');
+
+        pokeImg.appendChild(pokeImgContent);
+        pokeImg.setAttribute('src', pokemonesObject.img);
+        
+        pokeType.appendChild(pokeTypeContent);
+    
+        
+        cardResult.appendChild(pokeName);
+        cardResult.appendChild(pokeImg);
+        cardResult.appendChild(pokeType);
+
+        cardBox.appendChild(cardResult);
+      }
+});
+
+buttonHelp.addEventListener('click', () => {
+    alert('funciona');
+});
+
+buttonSearchPokemon.addEventListener('click', () => {
+    alert('funciona');
+});
+
+buttonAsc.addEventListener('click', () => {
+    alert('funciona');
+});
+
+buttonDesc.addEventListener('click', () => {
+    alert('funciona');
+});
+
+//Primer boton de los tipos para ordenar
+buttonPokeType.addEventListener('click', () => {
+    alert('funciona');
+});

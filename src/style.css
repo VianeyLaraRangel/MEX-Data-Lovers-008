@@ -11,16 +11,17 @@
 
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 
+
 .container {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+    margin: 0px auto;
+    height: 100vh;
   }
 
   
 /*Definiendo caracteristicas del container de todo*/
 .main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
-  padding: 1em 2em;
+  padding: 1em 2em 1em 2em;
 }
 
 .main-nav, .input-search, .lateral-content, .card-box, .button-box, .footer-buttons-box {
@@ -29,17 +30,15 @@
 }
 
 .main-head {
-  background-color: white;
-  height: auto;
-  width: inherit;
+  background-color: #fa0404;
+  height: 150px;
 }
 
 .logo .img {
-max-width: 100%;
+  max-width: 100%;
 }
 
 .titulo {
-  background-color: #2263ca;
   max-width: 100%;
 }
 
@@ -70,6 +69,7 @@ background-color: #efc207;
   height: auto;
   background-color: #2263ca;
   text-align: center;
+  align-items: flex-end;
 }
 
 /*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
@@ -79,25 +79,24 @@ background-color: #efc207;
     min-height: 10px;
     padding: 10px;
   }
+
+  /*[class*= "row"] {
+    display: flex;
+    align-content: space-between;
+  }*/
 /*Estableciendo los porcentajes ancho de columna para grid*/
-  .col-1{width: 8.333333333333332%;}
-    .col-2{width: 16.666666666666664%;}
-    .col-3{width: 25%;}
-    .col-4{width: 33.33333333333333%;}
-    .col-5{width: 41.66666666666667%;}
-    .col-6{width: 50%;}
-    .col-7{width: 58.333333333333336%;}
-    .col-8{width: 66.66666666666666%;}
-    .col-9{width: 75%;}
-    .col-10{width: 83.33333333333334%;}
-    .col-11{width: 91.66666666666666%;}
-    .col-12{width: 100%;}
+  .col-1{width: 12.5%;}
+    .col-2{width: 25%;}
+    .col-3{width: 37.5%;}
+    .col-4{width: 50%;}
+    .col-5{width: 62.5%;}
+    .col-6{width: 75%;}
+    .col-7{width: 87.5%;}
+    .col-8{width: 100%;}
 
     /*Estilo para las filas*/
   .row {
-    margin: auto;
-    width: 100%;
-    height: auto;
+    display: flex;
   }
 
 
