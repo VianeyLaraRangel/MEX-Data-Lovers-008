@@ -45,3 +45,5 @@ const imgElement = document.createElement('img');
 imgElement.setAttribute('src',pokemonesObject.img);
 //2.4 Agregar el elemento al documento
 document.getElementById('imprime-nodo').appendChild(imgElement);
+
+
