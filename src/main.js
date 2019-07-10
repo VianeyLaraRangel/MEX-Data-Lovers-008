@@ -19,7 +19,7 @@ const cardResult = document.getElementById('imprime-nodo');
 //a)Evento para imprimir todos los pokemones en la pantalla principal
 buttonHomePokemones.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
-    for (let i = 0; i < pokemonesArray.length; i++) {
+    for (let i = 0; i < window.getData.length; i++) {
         let pokemonesObject = POKEMON.pokemon[i];
         // let printCard = Object.keys(pokemonesObject);
         // console.log(printCard);
