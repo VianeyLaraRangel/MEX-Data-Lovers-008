@@ -1,4 +1,6 @@
 /*Aquí Media queries*/
+/*4.Visualizarse sin problemas desde distintos tamaños de pantallas: móviles, tablets y desktops.
+
 /*Desktop (780 a 1080px*/
 @media (max-width: 1440px) {
     body {
