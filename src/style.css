@@ -19,36 +19,32 @@
 
   [class*= "row"] {
     display: flex;
+    padding: 20px;
+    width: 100%;
   }
 
   [class*= "col-"]{
     border: 1px solid black;
-    min-height: 10px;
-    padding: 10px;
+    min-height: 50px;
   }
-  
-.main-head, .main-nav, .input-search, .card-box, .button-box, .fotter-buttons-box {
-  padding: .2em .5em .2em .5em;
-}
-
-.main-nav, .input-search, .lateral-content, .card-box, .button-box, .footer-buttons-box {
-  float: left;
-}
 
 .main-head {
   background-color: #fa0404;
-  height: 150px;
-  padding: 1em 2em 2em 1em;
+  height: 160px;
 }
 
-.logo {
-  display: block;
-  margin: auto;
-}
+      .logo {
+        display: block;
+        text-align: center;
+      }
 
-.titulo {
-  max-width: 100%;
-}
+      .button-help {
+        padding: .5em 1em .1em -.5em;
+        border-radius: 20px;
+        background-color: #efc207;
+        height: 50px;
+        font-size: 0.875rem;
+      }
 
 .main-nav {
   width: 100%;
@@ -56,13 +52,13 @@
 }
 
 .lateral-content{
-width: 50%;
 background-color: #efc207;
 }
- .input-search, .input {
-   width: 100%;
+.input-search, .input {
+   width: 90%;
    border-radius: 10px;
- }
+   height: 30px;
+}
 
 .card-box {
   width: 100%;
@@ -72,23 +68,27 @@ background-color: #efc207;
   border-color: black;
 }
 
+/*Botones para ordenar asc y desc*/
 .button-box {
-  width: 30%;
   background-color: #efc207;
+  text-align: center;
+  
 }
 
 .footer-buttons-box {
-  width: 100%;
-  height: auto;
   background-color: #2263ca;
   text-align: center;
+  width: 100%;
+  height: auto;
 }
 
-.space-between-buttonfooter {  
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.final-button-footer {
-margin-right: 20px;
-}
+.col-2-specific {
+  display: flex;
+  justify-items: center;
+  background-color: #efc207;
+  text-align: center;
+  border: solid 2px #fa0404;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 2.5em;
+} 
