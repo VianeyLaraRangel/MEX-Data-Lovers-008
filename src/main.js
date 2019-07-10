@@ -1,7 +1,4 @@
-//onload = window.alert('Bienvenido a pokepedia!');
 //Variables globales con el acceso a la data para iterar
-const pokemonesArray = POKEMON.pokemon;
-const pokemonesObject = POKEMON.pokemon[0];
 
 //Declarar todos los botones que usaremos
 const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
