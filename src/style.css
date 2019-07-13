@@ -33,18 +33,17 @@
   height: 160px;
 }
 
-      .logo {
-        display: block;
-        text-align: center;
-      }
+.logo {
+  display: block;
+  text-align: left;
+}
 
-      .button-help {
-        padding: .5em 1em .1em -.5em;
-        border-radius: 20px;
-        background-color: #efc207;
-        height: 50px;
-        font-size: 0.875rem;
-      }
+.button-help {
+  
+  border-radius: 20px;
+  background-color: #efc207;  
+  font-size: 1rem;
+}
 
 .main-nav {
   width: 100%;
@@ -75,6 +74,7 @@ background-color: #efc207;
   
 }
 
+/*botones para filtrar*/
 .footer-buttons-box {
   background-color: #2263ca;
   text-align: center;
