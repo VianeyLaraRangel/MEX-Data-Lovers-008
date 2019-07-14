@@ -6,9 +6,9 @@ const cardTemplate = document.getElementById('card-box-specific');
 
 const printData = (pokemonesArray) => {
     let str = '';
-    
+
     pokemonesArray.forEach(element => {
-        str += `<div class="row">
+        str += `<div class="row lateral-content">
         <div class="col-2-specific" id="imprime-nodo-specific">
           <h2>${element.name}</h2>
           <img src="${element.img}">
@@ -26,7 +26,7 @@ const printData = (pokemonesArray) => {
     cardTemplate.innerHTML = str;
 };
 
-printData(pokemonesArray);
+
 
 //Declarar todos los botones que usaremos
 const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
@@ -44,59 +44,58 @@ const cardResult = document.getElementById('imprime-nodo');
 
 //a)Evento para imprimir todos los pokemones en la pantalla principal
 buttonHomePokemones.addEventListener('click', () => {
-   //Escribir un bucle que itere por el arreglo
-   for (let i = 0; i < pokemonesArray.length; i++) {
-           let pokemonesObject = POKEMON.pokemon[i];
-
-   //Crear elementos (html)
-           let pokeName = document.createElement('h2');
-           let pokeImg = document.createElement('img');
-           let pokeType = document.createElement('p');
-   //Crear nodos (contenido de los hijos para su madre/padre)
-       let pokeNameContent = document.createTextNode(pokemonesObject.name);
-       console.log(pokeNameContent);
-
-       let pokeImgContent = document.createTextNode(pokemonesObject.img);
-       console.log(pokeImgContent);
-
-       let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
-       console.log(pokeTypeContent);
-  
-   //Hacer de los nodos hijos de los elementos
-       pokeName.appendChild(pokeNameContent);
-       pokeName.setAttribute('align', 'center');
-
-       pokeImg.appendChild(pokeImgContent);
-       pokeImg.setAttribute('src', pokemonesObject.img);
-      
-       pokeType.appendChild(pokeTypeContent);
-  
-      
-       cardResult.appendChild(pokeName);
-       cardResult.appendChild(pokeImg);
-       cardResult.appendChild(pokeType);
-
-       cardBox.appendChild(cardResult);
-     }
+    printData(pokemonesArray);
 });
-
 buttonHelp.addEventListener('click', () => {
-   alert('funciona');
+    //Escribir un bucle que itere por el arreglo
+    for (let i = 0; i < pokemonesArray.length; i++) {
+        let pokemonesObject = POKEMON.pokemon[i];
+
+        //Crear elementos (html)
+        let pokeName = document.createElement('h2');
+        let pokeImg = document.createElement('img');
+        let pokeType = document.createElement('p');
+        //Crear nodos (contenido de los hijos para su madre/padre)
+        let pokeNameContent = document.createTextNode(pokemonesObject.name);
+        console.log(pokeNameContent);
+
+        let pokeImgContent = document.createTextNode(pokemonesObject.img);
+        console.log(pokeImgContent);
+
+        let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
+        console.log(pokeTypeContent);
+
+        //Hacer de los nodos hijos de los elementos
+        pokeName.appendChild(pokeNameContent);
+        pokeName.setAttribute('align', 'center');
+
+        pokeImg.appendChild(pokeImgContent);
+        pokeImg.setAttribute('src', pokemonesObject.img);
+
+        pokeType.appendChild(pokeTypeContent);
+
+
+        cardResult.appendChild(pokeName);
+        cardResult.appendChild(pokeImg);
+        cardResult.appendChild(pokeType);
+
+        cardBox.appendChild(cardResult);
+    }
 });
 
 buttonSearchPokemon.addEventListener('click', () => {
-   alert('funciona');
+    alert('funciona');
 });
 
 buttonAsc.addEventListener('click', () => {
-   alert('funciona');
+    alert('funciona');
 });
 
 buttonDesc.addEventListener('click', () => {
-   alert('funciona');
+    alert('funciona');
 });
 
 //Primer boton de los tipos para ordenar
 buttonPokeType.addEventListener('click', () => {
-   alert('funciona');
+    alert('funciona');
 });
