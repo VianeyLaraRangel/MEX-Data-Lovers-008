@@ -9,6 +9,7 @@ const buttonHelp = document.getElementById('ayuda-modal');
 const buttonSearchPokemon = document.getElementById('busca-pokemon');
 const buttonAsc = document.getElementById('boton-asc');
 const buttonDesc = document.getElementById('boton-desc');
+//Seis (6) botones
 const buttonPokeType = document.getElementById('poison-type');
 
 //Declarar variables en donde se imprimen los nodos
@@ -18,58 +19,60 @@ const cardResult = document.getElementById('imprime-nodo');
 
 //a)Evento para imprimir todos los pokemones en la pantalla principal
 buttonHomePokemones.addEventListener('click', () => {
-    //Escribir un bucle que itere por el arreglo
-    for (let i = 0; i < window.getData.length; i++) {
-        let pokemonesObject = POKEMON.pokemon[i];
-        // let printCard = Object.keys(pokemonesObject);
-        // console.log(printCard);
+   //Escribir un bucle que itere por el arreglo
+   for (let i = 0; i < pokemonesArray.length; i++) {
+           let pokemonesObject = POKEMON.pokemon[i];
+           let printCard = Object.keys(pokemonesObject);
 
-        //Crear elementos (html)
-        let pokeName = document.createElement('h2');
-        let pokeImg = document.createElement('img');
-        let pokeType = document.createElement('p');
-        //Hacer nodos de los valores
-        let pokeNameContent = document.createTextNode(pokemonesObject.name);
+   //Crear elementos (html)
+           let pokeName = document.createElement('h2');
+           let pokeImg = document.createElement('img');
+           let pokeType = document.createElement('p');
+   //Crear nodos (contenido de los hijos para su madre/padre)
+       let pokeNameContent = document.createTextNode(pokemonesObject.name);
+       console.log(pokeNameContent);
 
-        let pokeImgContent = document.createTextNode(pokemonesObject.img);
+       let pokeImgContent = document.createTextNode(pokemonesObject.img);
+       console.log(pokeImgContent);
 
-        let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
+       let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
+       console.log(pokeTypeContent);
+  
+   //Hacer de los nodos hijos de los elementos
+       pokeName.appendChild(pokeNameContent);
+       pokeName.setAttribute('align', 'center');
 
-        //Hacer de los contenidos, hijxs de los elementos
-        pokeName.appendChild(pokeNameContent);
-        pokeName.setAttribute('align', 'center');
+       pokeImg.appendChild(pokeImgContent);
+       pokeImg.setAttribute('src', pokemonesObject.img);
+      
+       pokeType.appendChild(pokeTypeContent);
+  
+      
+       cardResult.appendChild(pokeName);
+       cardResult.appendChild(pokeImg);
+       cardResult.appendChild(pokeType);
 
-        pokeImg.appendChild(pokeImgContent);
-        pokeImg.setAttribute('src', pokemonesObject.img);
-
-        pokeType.appendChild(pokeTypeContent);
-
-        cardResult.appendChild(pokeName);
-        cardResult.appendChild(pokeImg);
-        cardResult.appendChild(pokeType);
-
-        cardBox.appendChild(cardResult);
-    }
+       cardBox.appendChild(cardResult);
+     }
 });
 
 buttonHelp.addEventListener('click', () => {
-    alert('funciona');
+   alert('funciona');
 });
 
 buttonSearchPokemon.addEventListener('click', () => {
-    //alert('funcionaaa');
-
+   alert('funciona');
 });
 
 buttonAsc.addEventListener('click', () => {
-    alert('funciona');
+   alert('funciona');
 });
 
 buttonDesc.addEventListener('click', () => {
-    alert('funciona');
+   alert('funciona');
 });
 
 //Primer boton de los tipos para ordenar
 buttonPokeType.addEventListener('click', () => {
-    alert('funciona');
+   alert('funciona');
 });

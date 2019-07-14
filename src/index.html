@@ -2,139 +2,139 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Lovers</title>
-  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">Enlace a W3.CSS-->
-  <script src="https://kit.fontawesome.com/8766b10af8.js"></script>
-  <!--Enlace a font awesome-->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Lovers</title>
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">Enlace a W3.CSS-->
+<script src="https://kit.fontawesome.com/8766b10af8.js"></script>
+<!--Enlace a font awesome-->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media.css">
 </head>
 
 <body>
-  <div class="container">
-    <header class="main-head">
-      <div class="row">
-        <div class="col-1 logo">
-          <button id="pokebola-imprime-todos">
-            <img src="img/logoPokebola.jpg" alt="logoPokebola" title="Home" width="130px">
-          </button>
-        </div>
-        <div class="col-5 logo">
-          <img src="img/pokepedia-logo-delineado.png" alt="Logo-Pokepedia" width="400px">
-        </div>
-        <div class="col-1">
-          <button id="ayuda-modal" class="button-help"><i class="fas fa-question"></i></button>
-        </div>
+<div class="container">
+  <header class="main-head">
+    <div class="row">
+      <div class="col-1 logo">
+        <button id="pokebola-imprime-todos">
+          <img src="img/logoPokebola.jpg" alt="logoPokebola" title="Home" width="130px">
+        </button>
       </div>
-    </header>
-
-    <form class="main-nav">
-      <div class="row">
-        <div class="col-1">
-          <h3>1° Gen</h3>
-        </div>
-        <div class="col-5" class="input-search">
-          <input type="text" class="input">
-          <button id="busca-pokemon"><i class="fas fa-search"></i></button>
-        </div>
-        <div class="col-1">
-          <h3>Kanto</h3>
-        </div>
+      <div class="col-5 logo">
+        <img src="img/pokepedia-logo-delineado.png" alt="Logo-Pokepedia" width="400px">
       </div>
-    </form>
-
-    <aside class="lateral-content">
-    </aside>
-
-    <!--CARD CON LA INFO DEL POKEMÓN -->
-    <!--AQUÍ INICIA LA CARD-->
-    <section id="card-box-specific">
-      <div class="row" class="card-box-specific">
-        <div class="col-2-specific" id="imprime-nodo-specific">
-          <h2>NOMBRE</h2>
-            <img src="http://www.serebii.net/pokemongo/pokemon/001.png"> 
-            <p>
-              <span>Tipo:</span><br> 
-              <span>Altura:</span><br>
-              <span>Peso:</span><br>
-            <span>Huevo(distancia):</span><br> 
-            <span>Debilidades:</span><br>
-            </p>
-        </div>
+      <div class="col-1">
+        <button id="ayuda-modal" class="button-help"><i class="fas fa-question"></i></button>
       </div>
-    </section>
-    <!--AQUÍ TERMINA LA CARD-->
-    <section id="card-box" class="card-box">
-      <div class="row">
-        <div class="col-2" id="imprime-nodo">
-          <!--Agregar este contenido con un nodo del DOM-->
-        </div>
+    </div>
+  </header>
+
+  <form class="main-nav">
+    <div class="row">
+      <div class="col-1">
+        <h3>1° Gen</h3>
       </div>
-    </section>
-
-    <!--AQUÍ COMIENZA LA CARD DE LA BÚSQUEDA-->
-    <!--AQUÍ INICIA LA CARD-->
-
-    <!--AQUÍ TERMINA LA CARD-->
-
-    <!--AQUÍ COMIENZA EL HOME PAGE -->
-    <!--AQUÍ INICIA LA CARD-->
-
-    <!--AQUÍ TERMINA LA CARD-->
-    <section class="button-box">
-      <div class="row">
-        <div class="col-7">
-          <button id="boton-asc"><i class="fas fa-arrow-up"></i></button>
-          <button id="boton-desc"><i class="fas fa-arrow-down"></i></button>
-        </div>
+      <div class="col-5" class="input-search">
+        <input type="text" class="input" id="input-string">
+        <button id="busca-pokemon"><i class="fas fa-search"></i></button>
       </div>
-    </section>
-
-    <footer class="footer-buttons-box">
-      <div class="row">
-        <div class="col-1">
-          <button class="btn-pok" id="poison-type">
-            <img src="img/Icon_Veneno.png" title="Tipo veneno">
-          </button>
-        </div>
-        <div class="col-1">
-          <button class="btn-pok" id="grass-type">
-            <img src="img/Icon_Planta.png" title="Tipo planta">
-          </button>
-        </div>
-        <div class="col-1">
-          <button class="btn-pok" id="fire-type">
-            <img src="img/Icon_Fuego.png" title="Tipo fuego">
-          </button>
-        </div>
-        <div class="col-1">
-          <button class="btn-pok" id="electric-type">
-            <img src="img/Icon_Electric.png" title="Tipo eléctrico">
-          </button>
-        </div>
-        <div class="col-1">
-          <button class="btn-pok" id="water-type">
-            <img src="img/Icon_Agua.png" title="Tipo agua">
-          </button>
-        </div>
-        <div class="col-1">
-          <button class="btn-pok" id="rock-type">
-            <img src="img/Icon_Roca.png" title="Tipo roca">
-          </button>
-        </div>
-        <div class="col-1">
-          <button class="btn-pok" id="rock-type">
-            <img src="img/Icon_Bicho.png" title="Tipo roca">
-          </button>
-        </div>
+      <div class="col-1">
+        <h3>Kanto</h3>
       </div>
-    </footer>
-  </div>
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+    </div>
+  </form>
+
+  <aside class="lateral-content">
+  </aside>
+
+  <!--CARD CON LA INFO DEL POKEMÓN -->
+  <!--AQUÍ INICIA LA CARD-->
+  <section id="card-box-specific">
+    <div class="row" class="card-box-specific">
+      <div class="col-2-specific" id="imprime-nodo-specific">
+        <h2>NOMBRE</h2>
+          <img src="http://www.serebii.net/pokemongo/pokemon/001.png">
+          <p>
+            <span>Tipo:</span><br>
+            <span>Altura:</span><br>
+            <span>Peso:</span><br>
+          <span>Huevo(distancia):</span><br>
+          <span>Debilidades:</span><br>
+          </p>
+      </div>
+    </div>
+  </section>
+  <!--AQUÍ TERMINA LA CARD-->
+  <section id="card-box" class="card-box">
+    <div class="row">
+      <div class="col-2" id="imprime-nodo">
+        <!--Agregar este contenido con un nodo del DOM-->
+      </div>
+    </div>
+  </section>
+
+  <!--AQUÍ COMIENZA LA CARD DE LA BÚSQUEDA-->
+  <!--AQUÍ INICIA LA CARD-->
+
+  <!--AQUÍ TERMINA LA CARD-->
+
+  <!--AQUÍ COMIENZA EL HOME PAGE -->
+  <!--AQUÍ INICIA LA CARD-->
+
+  <!--AQUÍ TERMINA LA CARD-->
+  <section class="button-box">
+    <div class="row">
+      <div class="col-7">
+        <button id="boton-asc"><i class="fas fa-arrow-up"></i></button>
+        <button id="boton-desc"><i class="fas fa-arrow-down"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-buttons-box">
+    <div class="row">
+      <div class="col-1">
+        <button class="btn-pok" id="poison-type">
+          <img src="img/Icon_Veneno.png" title="Tipo veneno">
+        </button>
+      </div>
+      <div class="col-1">
+        <button class="btn-pok" id="grass-type">
+          <img src="img/Icon_Planta.png" title="Tipo planta">
+        </button>
+      </div>
+      <div class="col-1">
+        <button class="btn-pok" id="fire-type">
+          <img src="img/Icon_Fuego.png" title="Tipo fuego">
+        </button>
+      </div>
+      <div class="col-1">
+        <button class="btn-pok" id="electric-type">
+          <img src="img/Icon_Electric.png" title="Tipo eléctrico">
+        </button>
+      </div>
+      <div class="col-1">
+        <button class="btn-pok" id="water-type">
+          <img src="img/Icon_Agua.png" title="Tipo agua">
+        </button>
+      </div>
+      <div class="col-1">
+        <button class="btn-pok" id="rock-type">
+          <img src="img/Icon_Roca.png" title="Tipo roca">
+        </button>
+      </div>
+      <div class="col-1">
+        <button class="btn-pok" id="rock-type">
+          <img src="img/Icon_Bicho.png" title="Tipo roca">
+        </button>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="./data/pokemon/pokemon.js"></script>
+<script src="data.js"></script>
+<script src="main.js"></script>
 </body>
 
 </html>
