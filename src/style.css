@@ -1,62 +1,74 @@
-/*OCULTAR CONTENIDO
-.container{
-  display: none
-}
-/*PRUEBA MOSTRAR PRUEBA NODO
-.container2{
-  display: block
-}
-*/
-
 /*Definiendo caracteristicas del container de todo*/
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 .container {
   width: 100%;
   margin: 0px auto;
   box-sizing: border-box;
+  font-family: 'Squada One', cursive;
  }
  
  [class*= "row"] {
   display: flex;
-  padding: 20px;
   width: 100%;
+  justify-content: space-around;
  }
  
  [class*= "col-"]{
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   min-height: 50px;
  }
  
  .main-head {
- background-color: #fa0404;
- height: 160px;
+ display: flex;
+ background-color: white;
+ height: auto;
+ justify-content: space-around;
  }
- 
  .logo {
  display: block;
  text-align: left;
+ margin: 0 auto;
  }
- 
+ .titulo {
+   display: flex;
+   justify-content: center;
+   align-content: flex-end;
+   width: 100%;
+ }
  .button-help {
- border-radius: 20px;
+ border-radius: 50px;
  background-color: #efc207;
- font-size: 1rem;
+ font-size: 1em;
  }
  
  .main-nav {
- width: 100%;
  background-color: #2263ca;
+ padding-top: 1em;
+ }
+ .descripcion {
+   text-align: center;
  }
  
- .lateral-content{
- background-color: #efc207;
- }
  .input-search, .input {
  width: 90%;
  border-radius: 10px;
- height: 30px;
+ height: 40px;
+ font-size: 2em;
+ }
+ .button-search {
+   font-size: 2.2em;
  }
  
+ .lateral-content{
+  background-color: #fa0404;
+  display: flex;
+  justify-items: space-around;
+  text-align: center;
+  border: solid 5px #efc207;
+  border-radius: 10px;
+  width: 20%;
+  }
+
  .card-box {
  width: 100%;
  height: auto;
@@ -67,25 +79,20 @@
  
  /*Botones para ordenar asc y desc*/
  .button-box {
- background-color: #efc207;
  text-align: center;
+ font-size: 1em;
  }
  
  /*botones para filtrar*/
  .footer-buttons-box {
- background-color: #2263ca;
+ background-color: white;
  text-align: center;
- width: 100%;
- height: auto;
+ justify-content: space-around !important;
  }
  
- .col-2-specific {
- display: flex;
- justify-items: center;
- background-color: #efc207;
- text-align: center;
- border: solid 2px #fa0404;
- border-radius: 10px;
- width: 80%;
- margin-left: 2.5em;
- } 
+footer {
+  background-color: #2263ca;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}

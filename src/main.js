@@ -22,7 +22,6 @@ buttonHomePokemones.addEventListener('click', () => {
    //Escribir un bucle que itere por el arreglo
    for (let i = 0; i < pokemonesArray.length; i++) {
            let pokemonesObject = POKEMON.pokemon[i];
-           let printCard = Object.keys(pokemonesObject);
 
    //Crear elementos (html)
            let pokeName = document.createElement('h2');
