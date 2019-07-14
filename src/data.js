@@ -1,6 +1,4 @@
-//Objetivo: 1.Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-window.getData = {
-    
+window.getData = {    
   filterByType: (pokeData, typeValue) => {
       let filterByType = pokeData.filter(element => element.type.find((type)=> type === typeValue));
       console.log(filterByType);

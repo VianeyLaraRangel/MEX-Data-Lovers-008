@@ -1,11 +1,21 @@
-//Variables globales con el acceso a la data para iterar
+//Variables globales con el acceso a la data
 const pokemonesArray = POKEMON.pokemon;
-const pokemonesObject = POKEMON.pokemon[0];
+const pokemonesObject = Object.values(POKEMON.pokemon);
 const cardTemplate = document.getElementById('card-box-specific');
+
+//Nodos
+const cardBox = document.getElementById('card-box');
+const cardsGeneral = document.getElementById('cards-general');
+const cardResult = document.getElementById('imprime-nodo');
 
 //Botones
 const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
-//Boton instrucciones
+const buttonSearchPokemon = document.getElementById('busca-pokemon');
+const buttonAsc = document.getElementById('boton-asc');
+const buttonDesc = document.getElementById('boton-desc');
+const buttonPokeType = document.getElementById('poison-type');
+
+//Botones de instrucciones(modal)
 const buttonHelp = document.getElementById('ayuda-modal');
 const closeButtonHelp = document.getElementById('close');
 
@@ -13,72 +23,21 @@ const closeButtonHelp = document.getElementById('close');
 const hideSection = (id) => {
     document.getElementById(id).classList.add('hide');
 };
-//funcion que muestra una seccion con id
+
+//Función que muestra una seccion con id 
 const showSection = (id) => {
     document.getElementById(id).classList.remove('hide');
 };
 
-//Funcionalidad del modal
+//Funcionalidad del modal (retorno implícito)
 const showInstructions = () => showSection('instructions');
 const closeInstructions = () => hideSection('instructions');
 
+//Eventos de las funciones declaradas
 buttonHelp.addEventListener('click', showInstructions);
 closeButtonHelp.addEventListener('click', closeInstructions);
 
-
-const buttonSearchPokemon = document.getElementById('busca-pokemon');
-const buttonAsc = document.getElementById('boton-asc');
-const buttonDesc = document.getElementById('boton-desc');
-//Seis (6) botones
-const buttonPokeType = document.getElementById('poison-type');
-
-//Nodos
-const cardBox = document.getElementById('card-box');
-const cardsGeneral = document.getElementById('cards-general');
-const cardResult = document.getElementById('imprime-nodo');
-
-//Funciones declaradas
-const printData = (pokemonesArray) => {
-    let str = '';
-
-    pokemonesArray.forEach(element => {
-        str += `<div class="row lateral-content">
-        <div class="col-2-specific" id="imprime-nodo-specific">
-          <h2>${element.name}</h2>
-          <img src="${element.img}">
-          <p>
-            <span>Tipo: ${element.type[0]}, ${element.type[1]}</span>
-            <br>
-            <span>Altura:</span><br>
-            <span>Peso:</span><br>
-            <span>Huevo(distancia):</span><br>
-            <span>Debilidades:</span><br>
-          </p>
-        </div>
-      </div>`;
-    });
-    cardTemplate.innerHTML = str;
-};
-//Eventos
-
-buttonHomePokemones.addEventListener('click', () => {
-    printData(pokemonesArray);
-});
-
-
-buttonSearchPokemon.addEventListener('click', () => {
-    alert('funciona');
-});
-
-buttonAsc.addEventListener('click', () => {
-    alert('funciona');
-});
-
-buttonDesc.addEventListener('click', () => {
-    alert('funciona');
-});
-
-//Primer boton de los tipos para ordenar
+//Eventos de los nodos
 buttonPokeType.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {
@@ -115,3 +74,53 @@ buttonPokeType.addEventListener('click', () => {
         cardBox.appendChild(cardResult);
     }
 });
+
+buttonHomePokemones.addEventListener('click', () => {
+    printData(pokemonesArray);
+});
+
+
+buttonSearchPokemon.addEventListener('click', () => {
+    alert('funciona');
+});
+
+buttonAsc.addEventListener('click', () => {
+    alert('funciona');
+});
+
+buttonDesc.addEventListener('click', () => {
+    alert('funciona');
+});
+
+
+//Funciones declaradas que usan template string
+const printData = (pokemonesArray) => {
+    let str = '';
+    pokemonesArray.forEach(element => {
+        str += `<div class="row lateral-content">
+        <div class="col-2-specific" id="imprime-nodo-specific">
+          <h2>${element.name}</h2>
+          <img src="${element.img}">
+          <p>
+            <h1>${element.num}</h1>
+            <span>Tipo: ${element.type}</span>
+            <br>
+            <span>Altura: ${element.height}</span>
+            <br>
+            <span>Peso: ${element.weight}</span>
+            <br>
+            <span>Distancia p/huevo: ${element.egg}</span>
+            <br>
+            <span>Debilidades: ${element.weaknesses}</span>
+            <br>
+          </p>
+        </div>
+      </div>`;
+    });
+    cardTemplate.innerHTML = str;
+};
+
+//Funciones declaradas que usan nodos del DOM 
+const pokeNodes = () => {
+    console.log(pokeNodes);
+};
