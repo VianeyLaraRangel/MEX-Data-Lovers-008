@@ -16,9 +16,9 @@
     .col-7{width: 87.5%;}
     .col-8{width: 100%;}
     /*Estableciendo anchos de columna*/
-}
-/*Tablet o mobile 480 a 768px*/
-@media (max-width: 768px) {
+ }
+ /*Tablet o mobile 480 a 768px*/
+ @media (max-width: 768px) {
     body {
         background-color: #5d6270;
     }
@@ -30,8 +30,8 @@
     .col-5-md{width: 83.33333333333333%;}
     .col-6-md{width: 100%;}
   }
-/*Mobile menor a 480px*/
-@media (max-width: 480px) {
+ /*Mobile menor a 480px*/
+ @media (max-width: 480px) {
     body {
         background-color: #e8cd59;
     }
@@ -41,3 +41,4 @@
     .col-3-xs{width: 75%;}
     .col-4-xs{width: 100%;}
   }
+ 
