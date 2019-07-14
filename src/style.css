@@ -1,25 +1,16 @@
-/*OCULTAR CONTENIDO
-.container{
-  display: none
-}
-/*PRUEBA MOSTRAR PRUEBA NODO
-.container2{
-  display: block
-}
-*/
-
 /*Definiendo caracteristicas del container de todo*/
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 .container {
   width: 100%;
   margin: 0px auto;
   box-sizing: border-box;
+  font-family: 'Squada One', cursive;
  }
  
  [class*= "row"] {
   display: flex;
-  padding: 20px;
   width: 100%;
+  justify-content: space-around;
  }
  
  [class*= "col-"]{
@@ -28,23 +19,33 @@
  }
  
  .main-head {
+ display: flex;
  background-color: #fa0404;
- height: 160px;
+ height: auto;
+ justify-content: space-around;
  }
  
  .logo {
  display: block;
  text-align: left;
+ margin: 0 auto;
  }
- 
+ .titulo {
+   display: flex;
+   justify-content: center;
+   align-content: flex-end;
+   width: 100%;
+ }
+
  .button-help {
- border-radius: 20px;
+ border-radius: 50px;
  background-color: #efc207;
- font-size: 1rem;
+ font-size: 1em;
+ padding: 1em 3em 1em 3em;
+ text-align: center;
  }
  
  .main-nav {
- width: 100%;
  background-color: #2263ca;
  }
  
@@ -75,8 +76,7 @@
  .footer-buttons-box {
  background-color: #2263ca;
  text-align: center;
- width: 100%;
- height: auto;
+ justify-content: space-around !important;
  }
  
  .col-2-specific {
@@ -89,3 +89,10 @@
  width: 80%;
  margin-left: 2.5em;
  } 
+
+footer {
+  background-color: #fa0404;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
