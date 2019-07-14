@@ -1,40 +1,44 @@
 /*Aquí Media queries*/
+/*4.Visualizarse sin problemas desde distintos tamaños de pantallas: móviles, tablets y desktops.
+
 /*Desktop (780 a 1080px*/
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
     body {
         background-color:whitesmoke;
     }
-/*Estableciendo anchos de columna*/
-.col-1{ width: 12.5%;}
-.col-2{ width: 25%;}
-.col-3{ width: 37.5%;}
-.col-4{ width: 50%;}
-.col-5{ width: 62.5%;}
-.col-6{ width: 75%;}
-.col-7{ width: 87.5%;}
-.col-8{ width: 100%;}
-}
-/*Tablet o mobile 480 a 768px*/
-@media (max-width: 768px) {
+  /*Estableciendo los porcentajes ancho de columna para grid*/
+    .col-1{width: 12.5%;}
+    .col-2{width: 25%;}
+    .col-3{width: 37.5%;}
+    .col-4{width: 50%;}
+    .col-5{width: 62.5%;}
+    .col-6{width: 75%;}
+    .col-7{width: 87.5%;}
+    .col-8{width: 100%;}
+    /*Estableciendo anchos de columna*/
+ }
+ /*Tablet o mobile 480 a 768px*/
+ @media (max-width: 768px) {
     body {
         background-color: #5d6270;
     }
     /*Estableciendo anchos de columna*/
-    .col-1{width: 16.666666666666664%;}
-    .col-2{width: 33.33333333333333%;}
-    .col-3{width: 50%;}
-    .col-4{width: 66.6666666666666%;}
-    .col-5{width: 83.33333333333333%;}
-    .col-6{width: 100%;}
+    .col-1-md{width: 16.66666666666666%;}
+    .col-2-md{width: 33.3333333333333%;}
+    .col-3-md{width: 50%;}
+    .col-4-md{width: 66.6666666666666%;}
+    .col-5-md{width: 83.33333333333333%;}
+    .col-6-md{width: 100%;}
   }
-/*Mobile menor a 480px*/
-@media (max-width: 480px) {
+ /*Mobile menor a 480px*/
+ @media (max-width: 480px) {
     body {
         background-color: #e8cd59;
     }
     /*Estableciendo anchos de columna*/
-    .col-1{width: 25%;}
-    .col-2{width: 50%;}
-    .col-3{width: 75%;}
-    .col-4{width: 100%;}
+    .col-1-xs{width: 25%;}
+    .col-2-xs{width: 50%;}
+    .col-3-xs{width: 75%;}
+    .col-4-xs{width: 100%;}
   }
+ 

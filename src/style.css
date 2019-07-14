@@ -1,13 +1,22 @@
+/*OCULTAR CONTENIDO
+.container{
+   display: none
+}
+/*PRUEBA MOSTRAR PRUEBA NODO
+.container2{
+   display: block
+}
+*/
+
 /*Definiendo caracteristicas del container de todo*/
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
 .container {
   width: 100%;
-    margin: 0px auto;
-    box-sizing: border-box;
-  }
-/*Para practicar de grid y esta forma de selector que aplica a todo lo que contenga col-*/
-/*Estilo para las filas*/
-[class*="row"] {
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+[class*= "row"] {
   display: flex;
   padding: 20px;
   width: 100%;
@@ -15,58 +24,68 @@
 
 [class*= "col-"]{
   border: 1px solid black;
-  min-height: 10px;
+  min-height: 50px;
 }
 
-
 .main-head {
-  background-color: #fa0404;
-  height: 160px;
+background-color: #fa0404;
+height: 160px;
 }
 
 .logo {
-  display: block;
-  text-align: center;
+display: block;
+text-align: left;
 }
 
 .button-help {
-  padding: .5em 1em .1em -.5em;
-  border-radius: 20px;
-  background-color: #efc207;
-  height: 50px;
-  font-size: 0.875em;
+ border-radius: 20px;
+background-color: #efc207; 
+font-size: 1rem;
 }
 
 .main-nav {
-  width: 100%;
-  background-color: #2263ca;
+width: 100%;
+background-color: #2263ca;
 }
 
-.lateral-content {
+.lateral-content{
 background-color: #efc207;
 }
-
 .input-search, .input {
-  width: 90%;
-  border-radius: 10px;
-  height: 30px;
+ width: 90%;
+ border-radius: 10px;
+ height: 30px;
 }
 
 .card-box {
-  width: 100%;
-  height: auto;
-  background-color: #fa0404;
-  margin-bottom: 1em;
-}
-/*Botones para ordenar asc y desc*/
-.button-box {
-  background-color: #efc207;
-  text-align: center;
+width: 100%;
+height: auto;
+background-color: #fa0404;
+margin-bottom: 1em;
+border-color: black;
 }
 
+/*Botones para ordenar asc y desc*/
+.button-box {
+background-color: #efc207;
+text-align: center;
+}
+
+/*botones para filtrar*/
 .footer-buttons-box {
-  background-color: #2263ca;
-  text-align: center;
-  width: 100%;
-  height: auto;
+background-color: #2263ca;
+text-align: center;
+width: 100%;
+height: auto;
+}
+
+.col-2-specific {
+display: flex;
+justify-items: center;
+background-color: #efc207;
+text-align: center;
+border: solid 2px #fa0404;
+border-radius: 10px;
+width: 80%;
+margin-left: 2.5em;
 }
