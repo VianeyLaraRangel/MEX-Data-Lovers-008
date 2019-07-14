@@ -2,6 +2,31 @@
 //Variables globales con el acceso a la data para iterar
 const pokemonesArray = POKEMON.pokemon;
 const pokemonesObject = POKEMON.pokemon[0];
+const cardTemplate = document.getElementById('card-box-specific');
+
+const printData = (pokemonesArray) => {
+    let str = '';
+    
+    pokemonesArray.forEach(element => {
+        str += `<div class="row">
+        <div class="col-2-specific" id="imprime-nodo-specific">
+          <h2>${element.name}</h2>
+          <img src="${element.img}">
+          <p>
+            <span>Tipo: ${element.type[0]}, ${element.type[1]}</span>
+            <br>
+            <span>Altura:</span><br>
+            <span>Peso:</span><br>
+            <span>Huevo(distancia):</span><br>
+            <span>Debilidades:</span><br>
+          </p>
+        </div>
+      </div>`
+    });
+    cardTemplate.innerHTML = str;
+};
+
+printData(pokemonesArray);
 
 //Declarar todos los botones que usaremos
 const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
