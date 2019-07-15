@@ -132,37 +132,6 @@ for (let i = 0; i < buttonPokeType.length; i++) {
     buttonPokeType[i].addEventListener("click", (event) => {
         let targetId = event.target.parentElement.id;
         let resultTargetId = [];
-        // switch (targetId) {
-        //     case "poison":
-        //         resultTargetId.push(window.filterDataByType(targetId));
-        //         // console.log(resultTargetId);
-        //         printData(resultTargetId);
-        //         break;
-        //     case "grass":
-        //         resultTargetId = window.filterDataByType(targetId);
-        //         printData(resultTargetId);
-        //         break;
-        //     case "fire":
-        //         resultTargetId = window.filterDataByType(targetId);
-        //         printData(resultTargetId);
-        //         break;
-        //     case "electric":
-        //         resultTargetId = window.filterDataByType(targetId);
-        //         printData(resultTargetId);
-        //         break;
-        //     case "water":
-        //         resultTargetId = window.filterDataByType(targetId);
-        //         printData(resultTargetId);
-        //         break;
-        //     case "rock":
-        //         resultTargetId = window.filterDataByType(targetId);
-        //         printData(resultTargetId);
-        //         break;
-        //     case "bug":
-        //         resultTargetId = window.filterDataByType(targetId);
-        //         printData(resultTargetId);
-        //         break;
-        // }
         resultTargetId = window.filterDataByType(targetId);
         printData(resultTargetId);
     });
