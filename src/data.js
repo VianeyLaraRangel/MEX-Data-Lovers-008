@@ -40,7 +40,6 @@ const filterByWeakness = (value) => {
   return optionResult;
 };
 
-
 const sortData = (sortOrder) => {
   let sortedResult = [];
   let sortBy;
