@@ -23,11 +23,13 @@
  background-color: white;
  height: auto;
  justify-content: space-around;
+ padding-top: 10px;
  }
  .logo {
  display: block;
  text-align: left;
  margin: 0 auto;
+ border-radius: 100%;
  }
  .titulo {
    display: flex;
@@ -61,12 +63,12 @@
  
  .lateral-content{
   background-color: #fa0404;
-  display: flex;
-  justify-items: space-around;
+  display: inline-block;
   text-align: center;
-  border: solid 5px #efc207;
+  margin: 1%;
+  border: solid 3px #efc207;
   border-radius: 10px;
-  width: 20%;
+  width: 25%;
   }
 
  .card-box {
@@ -85,14 +87,33 @@
  
  /*botones para filtrar*/
  .footer-buttons-box {
- background-color: white;
+ background-color: #2263ca;
  text-align: center;
  justify-content: space-around !important;
+ padding-top: 10px;
  }
+ .btn-pok {
+  border-radius: 100%;
+}
  
-footer {
+.footer {
   background-color: #2263ca;
-  position: absolute;
-  width: 100%;
   text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+#instructions {
+  margin: 100px auto;
+  padding-bottom: 50px;
+  background-color: #d9dee4;
+  width: 780px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }
