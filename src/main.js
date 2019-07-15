@@ -9,6 +9,9 @@ const cardBox = document.getElementById('card-box');
 const cardsGeneral = document.getElementById('cards-general');
 const cardResult = document.getElementById('imprime-nodo');
 
+//Select
+const selectWeakness = document.getElementById('seleccionar-debilidad');
+
 //Botones
 const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
 const buttonSearchPokemon = document.getElementById('busca-pokemon');
@@ -51,56 +54,19 @@ buttonSearchPokemon.addEventListener('click', (event) => {
     printData(filterDataByName);
 });
 
-//Eventos de los nodos
+//Eventos que ordenan y filtran
 buttonAsc.addEventListener('click', (event) => {
     event.preventDefault();
-    //Escribir un bucle que itere por el arreglo
-    for (let i = 0; i < pokemonesArray.length; i++) {
-        let pokemonesObject = POKEMON.pokemon[i];
-
-        //Crear elementos (html)
-        let pokeName = document.createElement('h2');
-        let pokeImg = document.createElement('img');
-        let pokeType = document.createElement('p');
-        //Crear nodos (contenido de los hijos para su madre/padre)
-        let pokeNameContent = document.createTextNode(pokemonesObject.name);
-        console.log(pokeNameContent);
-
-        let pokeImgContent = document.createTextNode(pokemonesObject.img);
-        console.log(pokeImgContent);
-
-        let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
-        console.log(pokeTypeContent);
-
-        //Hacer de los nodos hijos de los elementos
-        pokeName.appendChild(pokeNameContent);
-        pokeName.setAttribute('align', 'center');
-
-        pokeImg.appendChild(pokeImgContent);
-        pokeImg.setAttribute('src', pokemonesObject.img);
-
-        pokeType.appendChild(pokeTypeContent);
-
-
-        cardResult.appendChild(pokeName);
-        cardResult.appendChild(pokeImg);
-        cardResult.appendChild(pokeType);
-
-        cardBox.appendChild(cardResult);
-    }
+    let sortData = window.sortData('asc');
+    printData(sortData);
 });
 
 buttonDesc.addEventListener('click', () => {
-    alert('funciona');
+    event.preventDefault();
+    let sortData = window.sortData('desc');
+    printData(sortData);
 });
 
-
-
-
-//Funciones declaradas que usan nodos del DOM 
-// const pokeNodes = () => {
-//     console.log(pokeNodes);
-// };
 
 //Iterar para saber a cual botón de los tipos dió click
 for (let i = 0; i < buttonPokeType.length; i++) {
@@ -109,13 +75,16 @@ for (let i = 0; i < buttonPokeType.length; i++) {
         let resultTargetId = [];
         resultTargetId = window.filterDataByType(targetId);
         printData(resultTargetId);
-        // agregar addEventListener del select
-        // guardar el resultado anterior
-        // filterData con nuevo valor
-        // resultado anterior + nuevo
-        // imprimes
     });
 }
+
+selectWeakness.addEventListener('change', (event) => {
+    let resultWeak = [];
+    let targetId = event.target.value;
+    resultWeak = window.filterByWeakness(targetId);
+    console.log(resultWeak);
+    printData(resultWeak);
+});
 
 //Funciones declaradas que usan template string
 const printData = (pokemonesArray) => {
@@ -143,3 +112,43 @@ const printData = (pokemonesArray) => {
     });
     cardTemplate.innerHTML = str;
 };
+
+//Funciones declaradas que usan nodos del DOM
+
+// // const pokeNodes = () => {
+// //     console.log(pokeNodes);
+// //Escribir un bucle que itere por el arreglo
+// for (let i = 0; i < pokemonesArray.length; i++) {
+//     let pokemonesObject = POKEMON.pokemon[i];
+
+//     //Crear elementos (html)
+//     let pokeName = document.createElement('h2');
+//     let pokeImg = document.createElement('img');
+//     let pokeType = document.createElement('p');
+//     //Crear nodos (contenido de los hijos para su madre/padre)
+//     let pokeNameContent = document.createTextNode(pokemonesObject.name);
+//     console.log(pokeNameContent);
+
+//     let pokeImgContent = document.createTextNode(pokemonesObject.img);
+//     console.log(pokeImgContent);
+
+//     let pokeTypeContent = document.createTextNode(Object.values(pokemonesObject.type));
+//     console.log(pokeTypeContent);
+
+//     //Hacer de los nodos hijos de los elementos
+//     pokeName.appendChild(pokeNameContent);
+//     pokeName.setAttribute('align', 'center');
+
+//     pokeImg.appendChild(pokeImgContent);
+//     pokeImg.setAttribute('src', pokemonesObject.img);
+
+//     pokeType.appendChild(pokeTypeContent);
+
+
+//     cardResult.appendChild(pokeName);
+//     cardResult.appendChild(pokeImg);
+//     cardResult.appendChild(pokeType);
+
+//     cardBox.appendChild(cardResult);
+// }
+// // };
