@@ -2,6 +2,7 @@
 const pokemonesArray = POKEMON.pokemon;
 const pokemonesObject = Object.values(POKEMON.pokemon);
 const cardTemplate = document.getElementById('card-box-specific');
+const inputString = document.getElementById('input-string');
 
 //Nodos
 const cardBox = document.getElementById('card-box');
@@ -46,11 +47,12 @@ buttonHomePokemones.addEventListener('click', () => {
 
 buttonSearchPokemon.addEventListener('click', (event) => {
     event.preventDefault();
-    let inputString = document.getElementById('input-string').value;
-    let filterDataByName = window.filterData(inputString);
+    let inputStringSearch = inputString.value;
+    let filterDataByName = window.filterData(inputStringSearch);
     //console.log(filterArray);
     printData(filterDataByName);
 });
+
 
 buttonAsc.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
