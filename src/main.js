@@ -14,7 +14,7 @@ const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
 const buttonSearchPokemon = document.getElementById('busca-pokemon');
 const buttonAsc = document.getElementById('boton-asc');
 const buttonDesc = document.getElementById('boton-desc');
-const buttonPokeType = document.getElementById('poison-type');
+const buttonPokeType = document.getElementsByClassName('btn-pok');
 
 //Botones de instrucciones(modal)
 const buttonHelp = document.getElementById('ayuda-modal');
@@ -122,25 +122,48 @@ const printData = (pokemonesArray) => {
 };
 
 //Funciones declaradas que usan nodos del DOM 
-const pokeNodes = () => {
-    console.log(pokeNodes);
-};
+// const pokeNodes = () => {
+//     console.log(pokeNodes);
+// };
 
 //Función para saber a cual botón de los tipos dió click
 
-
-// const clickAction = (b) => {
-//  switch (b.id) {
-//      case "poison-type":
-//      alert('tipo piedra');
-//         break;
-//      case "grass-type":
-//          alert('tipo hierba');
-//          break;
-//  }
-//  console.log(b.id);
-// };
-
-buttonPokeType.addEventListener('click', () => {
-
-});
+for (let i = 0; i < buttonPokeType.length; i++) {
+    buttonPokeType[i].addEventListener("click", (event) => {
+        let targetId = event.target.parentElement.id;
+        let resultTargetId = [];
+        // switch (targetId) {
+        //     case "poison":
+        //         resultTargetId.push(window.filterDataByType(targetId));
+        //         // console.log(resultTargetId);
+        //         printData(resultTargetId);
+        //         break;
+        //     case "grass":
+        //         resultTargetId = window.filterDataByType(targetId);
+        //         printData(resultTargetId);
+        //         break;
+        //     case "fire":
+        //         resultTargetId = window.filterDataByType(targetId);
+        //         printData(resultTargetId);
+        //         break;
+        //     case "electric":
+        //         resultTargetId = window.filterDataByType(targetId);
+        //         printData(resultTargetId);
+        //         break;
+        //     case "water":
+        //         resultTargetId = window.filterDataByType(targetId);
+        //         printData(resultTargetId);
+        //         break;
+        //     case "rock":
+        //         resultTargetId = window.filterDataByType(targetId);
+        //         printData(resultTargetId);
+        //         break;
+        //     case "bug":
+        //         resultTargetId = window.filterDataByType(targetId);
+        //         printData(resultTargetId);
+        //         break;
+        // }
+        resultTargetId = window.filterDataByType(targetId);
+        printData(resultTargetId);
+    });
+}
