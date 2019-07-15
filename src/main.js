@@ -38,7 +38,21 @@ buttonHelp.addEventListener('click', showInstructions);
 closeButtonHelp.addEventListener('click', closeInstructions);
 
 //Eventos de los nodos
-buttonPokeType.addEventListener('click', () => {
+
+buttonHomePokemones.addEventListener('click', () => {
+    printData(pokemonesArray);
+});
+
+
+buttonSearchPokemon.addEventListener('click', (event) => {
+    event.preventDefault();
+    let inputString = document.getElementById('input-string').value;
+    let filterDataByName = window.filterData(inputString);
+    //console.log(filterArray);
+    printData(filterDataByName);
+});
+
+buttonAsc.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {
         let pokemonesObject = POKEMON.pokemon[i];
@@ -73,19 +87,6 @@ buttonPokeType.addEventListener('click', () => {
 
         cardBox.appendChild(cardResult);
     }
-});
-
-buttonHomePokemones.addEventListener('click', () => {
-    printData(pokemonesArray);
-});
-
-
-buttonSearchPokemon.addEventListener('click', () => {
-    alert('funciona');
-});
-
-buttonAsc.addEventListener('click', () => {
-    alert('funciona');
 });
 
 buttonDesc.addEventListener('click', () => {
@@ -124,3 +125,22 @@ const printData = (pokemonesArray) => {
 const pokeNodes = () => {
     console.log(pokeNodes);
 };
+
+//Función para saber a cual botón de los tipos dió click
+
+
+// const clickAction = (b) => {
+//  switch (b.id) {
+//      case "poison-type":
+//      alert('tipo piedra');
+//         break;
+//      case "grass-type":
+//          alert('tipo hierba');
+//          break;
+//  }
+//  console.log(b.id);
+// };
+
+buttonPokeType.addEventListener('click', () => {
+
+});
