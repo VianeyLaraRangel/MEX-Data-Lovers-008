@@ -38,12 +38,10 @@ const closeInstructions = () => hideSection('instructions');
 buttonHelp.addEventListener('click', showInstructions);
 closeButtonHelp.addEventListener('click', closeInstructions);
 
-//Eventos de los nodos
-
+//Eventos que usan template string
 buttonHomePokemones.addEventListener('click', () => {
     printData(pokemonesArray);
 });
-
 
 buttonSearchPokemon.addEventListener('click', (event) => {
     event.preventDefault();
@@ -53,7 +51,7 @@ buttonSearchPokemon.addEventListener('click', (event) => {
     printData(filterDataByName);
 });
 
-
+//Eventos de los nodos
 buttonAsc.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {

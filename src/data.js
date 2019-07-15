@@ -15,7 +15,6 @@ const filterData = (string) => {
 };
 
 //Objetivo: 2.Permitir al usuario filtrar y ordenar la data. Como?filterData(data, condition): esta función filter o filtrar recibiría la data, y nos retornaría aquellos datos que sí cumplan con la condición.
-
 //   const newData = data.filter(index => {
 //     return item.type.find((type)=> type === SelectType);
 //   });
