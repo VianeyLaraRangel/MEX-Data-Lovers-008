@@ -67,7 +67,10 @@ html, body, .container{
  .button-search {
    font-size: 2.2em;
  }
- 
+
+ aside {
+  overflow: scroll;
+ }
  .lateral-content{
   background-color: #fa0404;
   display: inline-block;
@@ -77,6 +80,28 @@ html, body, .container{
   border-radius: 10px;
   width: 25%;
   }
+
+  aside::-webkit-scrollbar {
+    background-color: #00B3CC;
+    height: 0px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 1rem;
+}
+
+aside.lateral-content::-webkit-scrollbar-thumb:hover {
+    background: #9BF2BA;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.col-2-specific {
+  
+}
 
  .card-box {
  width: 100%;
