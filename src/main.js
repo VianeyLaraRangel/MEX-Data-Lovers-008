@@ -52,7 +52,8 @@ buttonSearchPokemon.addEventListener('click', (event) => {
 });
 
 //Eventos de los nodos
-buttonAsc.addEventListener('click', () => {
+buttonAsc.addEventListener('click', (event) => {
+    event.preventDefault();
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {
         let pokemonesObject = POKEMON.pokemon[i];
@@ -94,6 +95,28 @@ buttonDesc.addEventListener('click', () => {
 });
 
 
+
+
+//Funciones declaradas que usan nodos del DOM 
+// const pokeNodes = () => {
+//     console.log(pokeNodes);
+// };
+
+//Iterar para saber a cual botón de los tipos dió click
+for (let i = 0; i < buttonPokeType.length; i++) {
+    buttonPokeType[i].addEventListener("click", (event) => {
+        let targetId = event.target.parentElement.id;
+        let resultTargetId = [];
+        resultTargetId = window.filterDataByType(targetId);
+        printData(resultTargetId);
+        // agregar addEventListener del select
+        // guardar el resultado anterior
+        // filterData con nuevo valor
+        // resultado anterior + nuevo
+        // imprimes
+    });
+}
+
 //Funciones declaradas que usan template string
 const printData = (pokemonesArray) => {
     let str = '';
@@ -120,19 +143,3 @@ const printData = (pokemonesArray) => {
     });
     cardTemplate.innerHTML = str;
 };
-
-//Funciones declaradas que usan nodos del DOM 
-// const pokeNodes = () => {
-//     console.log(pokeNodes);
-// };
-
-//Función para saber a cual botón de los tipos dió click
-
-for (let i = 0; i < buttonPokeType.length; i++) {
-    buttonPokeType[i].addEventListener("click", (event) => {
-        let targetId = event.target.parentElement.id;
-        let resultTargetId = [];
-        resultTargetId = window.filterDataByType(targetId);
-        printData(resultTargetId);
-    });
-}
