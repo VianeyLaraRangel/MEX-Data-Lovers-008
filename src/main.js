@@ -109,13 +109,18 @@ for (let i = 0; i < buttonPokeType.length; i++) {
         let resultTargetId = [];
         resultTargetId = window.filterDataByType(targetId);
         printData(resultTargetId);
-        // agregar addEventListener del select
-        // guardar el resultado anterior
-        // filterData con nuevo valor
-        // resultado anterior + nuevo
-        // imprimes
     });
 }
+
+const selectWeakness = document.getElementById('seleccionar-debilidad');
+
+selectWeakness.addEventListener('change', (event) => {
+    let resultWeak = [];
+    let targetId = event.target.value;
+    resultWeak = window.filterByWeakness(targetId);
+    console.log(resultWeak);
+    printData(resultWeak);
+});
 
 //Funciones declaradas que usan template string
 const printData = (pokemonesArray) => {

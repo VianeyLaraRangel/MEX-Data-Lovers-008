@@ -59,7 +59,7 @@ html, body, .container{
  }
  
  .input-search, .input {
- width: 90%;
+ width: 85%;
  border-radius: 10px;
  height: 40px;
  font-size: 2em;
@@ -71,37 +71,32 @@ html, body, .container{
  aside {
   overflow: scroll;
  }
+
+ aside::-webkit-scrollbar {
+  background-color: #2263ca;
+  height: 0px;
+  cursor: pointer;
+  }
+
+  aside::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+  }
+
+  aside.lateral-content::-webkit-scrollbar-thumb:hover {
+  background: #efc207;
+  cursor: pointer;
+  }
+
  .lateral-content{
   background-color: #fa0404;
   display: inline-block;
   text-align: center;
-  margin: 1%;
+  margin: 4em;
   border: solid 3px #efc207;
   border-radius: 10px;
   width: 25%;
   }
-
-  aside::-webkit-scrollbar {
-    background-color: #00B3CC;
-    height: 0px;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-aside::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 1rem;
-}
-
-aside.lateral-content::-webkit-scrollbar-thumb:hover {
-    background: #9BF2BA;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-.col-2-specific {
-  
-}
 
  .card-box {
  width: 100%;

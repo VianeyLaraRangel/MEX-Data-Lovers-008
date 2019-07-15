@@ -1,6 +1,5 @@
 const pokeData = POKEMON.pokemon;
 
-
 const filterData = (string) => {
   let search = string.charAt(0).toUpperCase() + string.slice(1);
 
@@ -20,7 +19,6 @@ const filterDataByType = (id) => {
 
   pokeData.forEach(element => {
     element.type.forEach(type => {
-      console.log(type, search);
       if (type === search) {
         searchResult.push(element);
       }
@@ -29,10 +27,22 @@ const filterDataByType = (id) => {
   return searchResult;
 };
 
-//Como? sortData(data, sortBy, sortOrder): esta función sort u ordenar recibe tres parámetros. El primer parámetro, data, nos entrega los datos. El segundo parámetro, sortBy, nos dice con respecto a cuál de los campos de la data se quiere ordenar. El tercer parámetro, sortOrder, indica si se quiere ordenar de manera ascendente o descendente.
+const filterByWeakness = (value) => {
+  let search = value.charAt(0).toUpperCase() + value.slice(1);
+  let optionResult = [];
+  pokeData.forEach(element => {
+    element.weaknesses.forEach(weak => {
+      if (weak === search) {
+        optionResult.push(element);
+      }
+    });
+  });
+  return optionResult;
+};
 
-const sortData = (data, sortBy, sortOrder) => {
 
+const sortData = (pokeData, sortBy, sortOrder) => {
+  let sorted = pokeData.sort((pokeData))
   return 'sortData';
 };
 
@@ -47,5 +57,6 @@ const computeStats = (data) => {
 
 window.filterData = filterData;
 window.filterDataByType = filterDataByType;
+window.filterByWeakness = filterByWeakness;
 //window.sortData = sortData;
   // window.computeStats = computeStats();
