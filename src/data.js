@@ -2,13 +2,19 @@ const pokeData = POKEMON.pokemon;
 
 
 const filterData = (string) => {
- let search = string.charAt(0).toUpperCase() + string.slice(1);
-  let filterByName = pokeData.filter(pokeObj => pokeObj.name === search);
-  return filterByName;
+  let search = string.charAt(0).toUpperCase() + string.slice(1);
+
+  let searchResult = [];
+
+  pokeData.forEach(element => {
+    if (element.name.indexOf(search) !== -1) {
+      searchResult.push(element);
+    }
+  });
+  return searchResult;
 };
 
 //Objetivo: 2.Permitir al usuario filtrar y ordenar la data. Como?filterData(data, condition): esta función filter o filtrar recibiría la data, y nos retornaría aquellos datos que sí cumplan con la condición.
-
 //   const newData = data.filter(index => {
 //     return item.type.find((type)=> type === SelectType);
 //   });

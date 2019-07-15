@@ -2,6 +2,7 @@
 const pokemonesArray = POKEMON.pokemon;
 const pokemonesObject = Object.values(POKEMON.pokemon);
 const cardTemplate = document.getElementById('card-box-specific');
+const inputString = document.getElementById('input-string');
 
 //Nodos
 const cardBox = document.getElementById('card-box');
@@ -37,21 +38,20 @@ const closeInstructions = () => hideSection('instructions');
 buttonHelp.addEventListener('click', showInstructions);
 closeButtonHelp.addEventListener('click', closeInstructions);
 
-//Eventos de los nodos
-
+//Eventos que usan template string
 buttonHomePokemones.addEventListener('click', () => {
     printData(pokemonesArray);
 });
 
-
 buttonSearchPokemon.addEventListener('click', (event) => {
     event.preventDefault();
-    let inputString = document.getElementById('input-string').value;
-    let filterDataByName = window.filterData(inputString);
+    let inputStringSearch = inputString.value;
+    let filterDataByName = window.filterData(inputStringSearch);
     //console.log(filterArray);
     printData(filterDataByName);
 });
 
+//Eventos de los nodos
 buttonAsc.addEventListener('click', () => {
     //Escribir un bucle que itere por el arreglo
     for (let i = 0; i < pokemonesArray.length; i++) {
