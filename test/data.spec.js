@@ -1,9 +1,10 @@
-require('../src/data.js');
+// import {expect} from 'chai';
+require('./src/data.js');
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+//Test para filter data
+describe('filterData', () => {
+  it('is a object', () => {
+    expect(typeof 'object').toBe('function');
   });
 
   it('returns `example`', () => {

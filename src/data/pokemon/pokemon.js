@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-const POKEMON = {
+window.POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",

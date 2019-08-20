@@ -1,4 +1,5 @@
-const pokeData = POKEMON.pokemon;
+const pokeData = window.POKEMON;
+console.log(pokeData);
 
 const filterData = (string) => {
   let search = string.charAt(0).toUpperCase() + string.slice(1);
@@ -8,6 +9,8 @@ const filterData = (string) => {
   pokeData.forEach(element => {
     if (element.name.indexOf(search) !== -1) {
       searchResult.push(element);
+      //Para test
+      console.log(typeof(searchResult));
     }
   });
   return searchResult;
