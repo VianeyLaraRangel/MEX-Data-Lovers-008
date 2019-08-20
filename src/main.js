@@ -1,5 +1,5 @@
 //Variables globales con el acceso a la data
-console.log(window.POKEMON);
+console.log(typeof(pokeData));
 const pokemonesArray = POKEMON.pokemon;
 const pokemonesObject = Object.values(POKEMON.pokemon);
 const cardTemplate = document.getElementById('card-box-specific');
