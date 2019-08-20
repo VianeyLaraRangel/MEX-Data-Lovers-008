@@ -1,4 +1,4 @@
-const pokeData = POKEMON.pokemon;
+const pokeData = window.POKEMON.pokemon;
 
 const filterData = (string) => {
   let search = string.charAt(0).toUpperCase() + string.slice(1);
