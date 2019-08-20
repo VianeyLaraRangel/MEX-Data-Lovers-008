@@ -1,7 +1,6 @@
 //Variables globales con el acceso a la data
 console.log(typeof(pokeData));
-const pokemonesArray = POKEMON.pokemon;
-const pokemonesObject = Object.values(POKEMON.pokemon);
+
 const cardTemplate = document.getElementById('card-box-specific');
 const inputString = document.getElementById('input-string');
 
@@ -88,9 +87,9 @@ selectWeakness.addEventListener('change', (event) => {
 });
 
 //Funciones declaradas que usan template string
-const printData = (pokemonesArray) => {
+const printData = (pokeData) => {
     let str = '';
-    pokemonesArray.forEach(element => {
+    pokeData.forEach(element => {
         str += `<div class="row lateral-content">
         <div class="col-2-specific" id="imprime-nodo-specific">
           <h2>${element.name}</h2>
