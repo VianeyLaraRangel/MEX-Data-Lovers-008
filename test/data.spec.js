@@ -3,8 +3,8 @@ require('./src/data.js');
 
 //Test para filter data
 describe('filterData', () => {
-  it('is a object', () => {
-    expect(typeof 'object').toBe('function');
+  it('is function', () => {
+    expect(typeof 'function').toBe('function');
   });
 
   it('returns `example`', () => {

@@ -1,5 +1,4 @@
-const pokeData = window.POKEMON;
-console.log(pokeData);
+const pokeData = POKEMON.pokemon;
 
 const filterData = (string) => {
   let search = string.charAt(0).toUpperCase() + string.slice(1);
@@ -9,8 +8,7 @@ const filterData = (string) => {
   pokeData.forEach(element => {
     if (element.name.indexOf(search) !== -1) {
       searchResult.push(element);
-      //Para test
-      console.log(typeof(searchResult));
+      console.log(searchResult);
     }
   });
   return searchResult;
@@ -70,16 +68,16 @@ const sortData = (sortOrder) => {
 
 //computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.//Objetivo: 3.Calcular estadísticas de la colección (o subcolección) como media aritmética, máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece un determinado valor, por ejemplo.
 
-const computeStats = (data) => {
+// const computeStats = (data) => {
 
-  return 'computeStats';
-};
+//   return 'computeStats';
+// };
 
-// //Agregarlo al objeto global
+//Agregarlo al objeto global
 
 window.filterData = filterData;
 window.filterDataByType = filterDataByType;
 window.filterByWeakness = filterByWeakness;
 window.sortData = sortData;
 //window.sortData = sortData;
-  // window.computeStats = computeStats();
+// window.computeStats = computeStats();
