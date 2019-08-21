@@ -6,11 +6,8 @@ describe('filterData', () => {
   it('is a function', () => {
     expect(typeof filterData).toBe('function');
   });
-  //El resultado es un array
-  // it('result is a object', () => {
-  //   expect(typeof filterData(pika)).toBe('object');
-  // });
 });
+
 //Ejemplo de la documentación de mocha
 const assert = require('assert');
 describe('Array', () => {

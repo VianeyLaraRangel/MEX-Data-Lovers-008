@@ -66,25 +66,30 @@ html, body, .container{
    text-align: center;
  }
  
- .input-search, .input {
+ .input-search {
  width: 85%;
- border-radius: 10px;
- height: 40px;
- font-size: 1em;
+ height: 70%;
+ border-radius: 10px 10px 10px 0px;
  text-align: center;
  display: flex;
  margin-left: 1.5em;
  margin-top: .5rem;
  }
+
  .button-search {
   width: 10%;
-  height: 45px;
+  height: 1.31em;
   font-size: 30px;
   margin: 0 auto;
-  position: relative;
-  left: 16em;
-  bottom: 1.5em;
+  border-radius: 0px 10px 10px 0px;
  }
+
+ .input-box {
+  width: 90%;
+  border-radius: 10px 0px 0px 10px;
+  height: 31px;
+ }
+ 
 
  /*Botones para ordenar asc y desc*/
  .button-box {
@@ -104,11 +109,6 @@ html, body, .container{
  } */
  .btn-pok {
   border-radius: 100%;
-}
-.input-search, .input {
- width: 90%;
- border-radius: 10px;
- height: 30px;
 }
 
 .selectOption {
