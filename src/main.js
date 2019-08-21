@@ -4,11 +4,6 @@ console.log(typeof(pokeData));
 const cardTemplate = document.getElementById('card-box-specific');
 const inputString = document.getElementById('input-string');
 
-//Nodos
-const cardBox = document.getElementById('card-box');
-const cardsGeneral = document.getElementById('cards-general');
-const cardResult = document.getElementById('imprime-nodo');
-
 //Select
 const selectWeakness = document.getElementById('seleccionar-debilidad');
 
@@ -114,6 +109,12 @@ const printData = (pokeData) => {
 };
 
 //Funciones declaradas que usan nodos del DOM
+
+//Nodos
+// const cardBox = document.getElementById('card-box');
+// const cardsGeneral = document.getElementById('cards-general');
+// const cardResult = document.getElementById('imprime-nodo');
+
 
 // // const pokeNodes = () => {
 // //     console.log(pokeNodes);
