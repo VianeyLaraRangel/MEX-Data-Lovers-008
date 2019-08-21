@@ -1,4 +1,3 @@
-// import {expect} from 'chai';
 require('../src/data.js');
 
 //Test para filter data
