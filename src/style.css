@@ -1,55 +1,88 @@
-/*OCULTAR CONTENIDO
-.container{
-   display: none
-}
-/*PRUEBA MOSTRAR PRUEBA NODO
-.container2{
-   display: block
-}
-*/
-
 /*Definiendo caracteristicas del container de todo*/
 /*Haciendo reset de todos los elementos para poder calcular la grid*/
+html, body, .container{
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  margin: 0;
+  font-family: 'Squada One', cursive;
+}
+
 .container {
   width: 100%;
   margin: 0px auto;
   box-sizing: border-box;
-}
-
-[class*= "row"] {
+ }
+ 
+ [class*= "row"] {
   display: flex;
-  padding: 20px;
   width: 100%;
-}
-
-[class*= "col-"]{
-  border: 1px solid black;
+  justify-content: space-around;
+ }
+ 
+ [class*= "col-"]{
+  /*border: 1px solid black;*/
   min-height: 50px;
-}
+ }
+ 
+ .main-head {
+ display: flex;
+ background-color: white;
+ height: auto;
+ justify-content: space-around;
+ padding-top: 10px;
+ }
+ .logo {
+ display: block;
+ text-align: left;
+ margin: 0 auto;
+ border-radius: 100%;
+ }
+ .titulo {
+   display: flex;
+   justify-content: center;
+   align-content: flex-end;
+   width: 100%;
+ }
+ .button-help {
+ border-radius: 50px;
+ background-color: #efc207;
+ font-size: 1em;
+ }
+ 
+ .main-nav {
+ background-color: #2263ca;
+ padding-top: 1em;
+ }
+ .descripcion {
+   text-align: center;
+ }
+ 
+ .input-search, .input {
+ width: 85%;
+ border-radius: 10px;
+ height: 40px;
+ font-size: 2em;
+ }
+ .button-search {
+   font-size: 2.2em;
+ }
 
-.main-head {
-background-color: #fa0404;
-height: 160px;
-}
-
-.logo {
-display: block;
-text-align: left;
-}
-
-.button-help {
- border-radius: 20px;
-background-color: #efc207; 
-font-size: 1rem;
-}
-
-.main-nav {
-width: 100%;
-background-color: #2263ca;
-}
-
-.lateral-content{
-background-color: #efc207;
+ /*Botones para ordenar asc y desc*/
+ .button-box {
+ text-align: center;
+ font-size: 1em;
+ }
+ 
+ /*Botones para filtrar*/
+ .footer-buttons-box {
+ background-color: #2263ca;
+ text-align: center;
+ justify-content: space-around !important;
+ padding-top: 10px;
+ }
+ .btn-pok {
+  border-radius: 100%;
 }
 .input-search, .input {
  width: 90%;
@@ -57,35 +90,74 @@ background-color: #efc207;
  height: 30px;
 }
 
-.card-box {
-width: 100%;
-height: auto;
-background-color: #fa0404;
-margin-bottom: 1em;
-border-color: black;
+.selectOption {
+  width: 25%;
+  height: auto;
+  color: black;
+  font-size: 15px;
+  font-family: 'Squada One', cursive;
 }
 
-/*Botones para ordenar asc y desc*/
-.button-box {
-background-color: #efc207;
-text-align: center;
+aside {
+  overflow: scroll;
+ }
+
+ aside::-webkit-scrollbar {
+  background-color: #2263ca;
+  height: 0px;
+  cursor: pointer;
+  }
+
+  aside::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+  }
+
+  aside.lateral-content::-webkit-scrollbar-thumb:hover {
+  background: #efc207;
+  cursor: pointer;
+  }
+
+ .lateral-content{
+  background-color: #fa0404;
+  display: inline-block;
+  text-align: center;
+  margin: 4em;
+  border: solid 3px #efc207;
+  border-radius: 10px;
+  width: 25%;
+  }
+
+ .card-box {
+ width: 100%;
+ height: auto;
+ background-color: #fa0404;
+ margin-bottom: 1em;
+ border-color: black;
+ }
+ 
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #2263ca;
+  width: 100%;
+  height: auto;
 }
 
-/*botones para filtrar*/
-.footer-buttons-box {
-background-color: #2263ca;
-text-align: center;
-width: 100%;
-height: auto;
+.hide {
+  display: none;
 }
 
-.col-2-specific {
-display: flex;
-justify-items: center;
-background-color: #efc207;
-text-align: center;
-border: solid 2px #fa0404;
-border-radius: 10px;
-width: 80%;
-margin-left: 2.5em;
+#instructions {
+  margin: 100px auto;
+  padding-bottom: 50px;
+  background-color: #d9dee4;
+  width: 780px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
 }

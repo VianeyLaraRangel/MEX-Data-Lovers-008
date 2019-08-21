@@ -1,16 +1,82 @@
-//Hacer una llave y hacer de su propiedad una función
-//Dentro de la función, crear una variable que sea un arreglo vacío
-//Hacer un ciclo,bucle o loop(for in o for each)
-//Cuando recorramos la data, crear dentro del blucle las variables que acceden a la info
-//Usar un método para introducir la data al arreglo (la data está en objetos)
-//Retornar el nuevo arreglo
-//Invocar la función dándole como argumento el arreglo
+const pokeData = POKEMON.pokemon;
 
-//Esta es una función de ejemplo, puedes ver como agregamos la función a nuestro objeto global window
-const getData = () => {
-  return 'getData';
+const filterData = (string) => {
+  let search = string.charAt(0).toUpperCase() + string.slice(1);
+
+  let searchResult = [];
+
+  pokeData.forEach(element => {
+    if (element.name.indexOf(search) !== -1) {
+      searchResult.push(element);
+    }
+  });
+  return searchResult;
 };
 
-//Agregarlo al objeto global
-window.getData = getData;
+const filterDataByType = (id) => {
+  let search = id.charAt(0).toUpperCase() + id.slice(1);
+  let searchResult = [];
 
+  pokeData.forEach(element => {
+    element.type.forEach(type => {
+      if (type === search) {
+        searchResult.push(element);
+      }
+    });
+  });
+  return searchResult;
+};
+
+const filterByWeakness = (value) => {
+  let search = value.charAt(0).toUpperCase() + value.slice(1);
+  let optionResult = [];
+  pokeData.forEach(element => {
+    element.weaknesses.forEach(weak => {
+      if (weak === search) {
+        optionResult.push(element);
+      }
+    });
+  });
+  return optionResult;
+};
+
+const sortData = (sortOrder) => {
+  let sortedResult = [];
+  let sortBy;
+  let array = [];
+  pokeData.forEach(element => {
+    sortedResult.push(element.num);
+  });
+  if (sortOrder === 'asc') {
+    sortBy = sortedResult.sort();
+    console.log(sortBy);
+  } else {
+    sortBy = sortedResult.sort();
+    sortBy.reverse();
+    console.log(sortBy);
+  }
+  for (let i = 0; i < sortBy.length; i++) {
+    pokeData.forEach(element => {
+      if (sortBy[i] === element.num) {
+        array.push(element);
+      }
+    });
+  }
+  return array;
+};
+
+//computeStats(data): la función compute o calcular, nos permitirá hacer cálculos estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.//Objetivo: 3.Calcular estadísticas de la colección (o subcolección) como media aritmética, máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece un determinado valor, por ejemplo.
+
+const computeStats = (data) => {
+
+  return 'computeStats';
+};
+
+// //Agregarlo al objeto global
+
+window.filterData = filterData;
+window.filterDataByType = filterDataByType;
+window.filterByWeakness = filterByWeakness;
+window.sortData = sortData;
+//window.sortData = sortData;
+  // window.computeStats = computeStats();
