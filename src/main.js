@@ -8,7 +8,7 @@ const inputString = document.getElementById('input-string');
 const selectWeakness = document.getElementById('seleccionar-debilidad');
 
 //Botones
-const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
+// const buttonHomePokemones = document.getElementById('pokebola-imprime-todos');
 const buttonSearchPokemon = document.getElementById('busca-pokemon');
 const buttonAsc = document.getElementById('boton-asc');
 const buttonDesc = document.getElementById('boton-desc');
@@ -37,9 +37,10 @@ buttonHelp.addEventListener('click', showInstructions);
 closeButtonHelp.addEventListener('click', closeInstructions);
 
 //Eventos que usan template string
-buttonHomePokemones.addEventListener('click', () => {
-    printData(pokemonesArray);
-});
+// buttonHomePokemones.addEventListener('click', () => {
+//     let pokeDataBall = pokeData;
+//     printData(pokeDataBall);
+// });
 
 buttonSearchPokemon.addEventListener('click', (event) => {
     event.preventDefault();
@@ -104,6 +105,7 @@ const printData = (pokeData) => {
           </p>
         </div>
       </div>`;
+      return pokeData;
     });
     cardTemplate.innerHTML = str;
 };
