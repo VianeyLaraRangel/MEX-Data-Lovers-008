@@ -1,23 +1,23 @@
 require('../src/data.js');
-
-//Test para filter data
-
-// describe('filterData', () => {
-//   it('Debería ser una función', () => {
-//     assert(typeof filterData, 'function', 'Es una función');
-//   });
-
-// //   it ('Debería retornar los objetos que coincidan con lo tecleado en el input de búsqueda', () => {
-// // assert.equal(typeof filterData(), "Es una función");
-// //   });
-// });
-
+// const testIntoFilterDataSearchResult = require('../src/data.js:5:16');
+//Test filterData
 describe('filterData', () => {
+  //Es una función
   it('is a function', () => {
     expect(typeof filterData).toBe('function');
   });
-
-  // it('returns "array"', () => {
-  //   expect(filterData).toBe('function');
+  //El resultado es un array
+  // it('result is a object', () => {
+  //   expect(typeof filterData(pika)).toBe('object');
   // });
+});
+//Ejemplo de la documentación de mocha
+const assert = require('assert');
+describe('Array', () => {
+  //Cómo encontrará la coincidencia el indexOf
+  describe('#indexOf()', () => {
+    it('should return -1 when the value is not present', () => {
+      assert.equal([1, 2, 3].indexOf(4), -1);
+    });
+  });
 });

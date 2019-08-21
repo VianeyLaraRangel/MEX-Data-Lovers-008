@@ -1,12 +1,12 @@
 const pokeData = window.pokeData;
-console.log(pokeData);
+console.log(typeof(pokeData));
 
 const filterData = (string) => {
   let search = string.charAt(0).toUpperCase() + string.slice(1);
 
   let searchResult = [];
 
-  pokeData.forEach(element => {
+  pokeData.pokemon.forEach(element => {
     if (element.name.indexOf(search) !== -1) {
       searchResult.push(element);
       console.log(searchResult);
@@ -32,7 +32,7 @@ const filterDataByType = (id) => {
 const filterByWeakness = (value) => {
   let search = value.charAt(0).toUpperCase() + value.slice(1);
   let optionResult = [];
-  pokeData.forEach(element => {
+  pokeData.pokemon.forEach(element => {
     element.weaknesses.forEach(weak => {
       if (weak === search) {
         optionResult.push(element);
@@ -46,7 +46,7 @@ const sortData = (sortOrder) => {
   let sortedResult = [];
   let sortBy;
   let array = [];
-  pokeData.forEach(element => {
+  pokeData.pokemon.forEach(element => {
     sortedResult.push(element.num);
   });
   if (sortOrder === 'asc') {
@@ -58,7 +58,7 @@ const sortData = (sortOrder) => {
     console.log(sortBy);
   }
   for (let i = 0; i < sortBy.length; i++) {
-    pokeData.forEach(element => {
+    pokeData.pokemon.forEach(element => {
       if (sortBy[i] === element.num) {
         array.push(element);
       }
